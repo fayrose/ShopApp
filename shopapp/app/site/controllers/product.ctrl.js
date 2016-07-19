@@ -17,24 +17,24 @@
 			{id:1, category:'Dolls', name:'Cabbage Patch Kid',price:'$250', quantity:'10'},
 			{id:2, category:'Fabric', name:'leather', price:'$45', quantity:'40'},
 			{id:3, category:'Woodwork', name:'table', price:'$4100', quantity:'2'},
-			{id:4, category:'Jewelry', name:'ring', price:'$50000', quantity:'10'},
+			{id:4, category:'Jewlery', name:'ring', price:'$50000', quantity:'10'},
 		];
 		productVm.product_update_btn = 'Update Product';
 		productVm.product_delete_btn = 'Remove Product';
-
+		
 		if($stateParams.productId != undefined){
 			productSrv.getProduct($stateParams.productId)
 			.then(function(res){
 				console.log(res);
 				productVm.product = res.data.product;
-				//TODO #2 set category based on edit form based on
+				//TODO #2 set category based on edit form based on 
 				//product category
 				for(var index in productVm.categories){
 					if(productVm.product.category == productVm.categories[index].value){
 						productVm.set_category = productVm.categories[index].value;
 					}
 				}
-
+				
 			})
 		}
 
@@ -64,24 +64,7 @@
 			//TODO #2
 			//create product object, pass to product service
 			//Update text in button
-			product = {
-				name: productVm.name,
-				image: productVm.image,
-				description: productVm.description,
-				category: productVm.categories,
-				price: productVm.price,
-				quantity: productVm.quantity
-			};
-			productSrv.addProduct(product);
-			/*
-			document.getElementsByName('add-product').value = "Product added!";
-			productVm.name = "";
-			productVm.image = "";
-			productVm.description = "";
-			productVm.categories = "";
-			productVm.price = "";
-			productVm.quantity = "";
-			*/
+			
 		}
 
 		function updateProduct(){
@@ -98,3 +81,7 @@
 	}
 
 })();
+
+
+
+
