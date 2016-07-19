@@ -8,13 +8,17 @@
 		var productVm = this;
 
 		productVm.categories = [
-			{label:'Shirts',value:'shirts'},
-			{label:'Pants',value:'pants'},
-			{label:'Shoes',value:'shoes'},
-			{label:'Outerwear',value:'outerwear'},
-			{label:'Accessories',value:'accessories'},
+			{label:'Dolls',value:'dolls'},
+			{label:'Fabric',value:'fabric'},
+			{label:'Woodwork',value:'woodwork'},
+			{label:'Jewlery',value:'jewlery'},
 		];
-		productVm.product = {};
+		productVm.product = [
+			{id:1, category:'Dolls', name:'Cabbage Patch Kid',price:'$250', quantity:'10'},
+			{id:2, category:'Fabric', name:'leather', price:'$45', quantity:'40'},
+			{id:3, category:'Woodwork', name:'table', price:'$4100', quantity:'2'},
+			{id:4, category:'Jewlery', name:'ring', price:'$50000', quantity:'10'},
+		];
 		productVm.product_update_btn = 'Update Product';
 		productVm.product_delete_btn = 'Remove Product';
 		
@@ -38,7 +42,24 @@
 		productVm.addProduct = addProduct;
 		productVm.updateProduct = updateProduct;
 		productVm.deleteProduct = deleteProduct;
+		productVm.listProducts = listProducts;
+		productVm.is_products = is_products;
 
+		function is_products(){
+		// 	var show = '';
+		// 	var hide = '';
+		// 	(productVm == undefined) ? return show = false: return  hide = true;
+		// 	(productVm != undefined) ? return show = true: return hide = false;
+			return false;
+		}
+
+		function listProducts(){
+			var products=[];
+			for (var item in productVm.product.length){
+				console.log(item);
+				products.push(item);
+			}
+		}
 		function addProduct(){
 			//TODO #2
 			//create product object, pass to product service
