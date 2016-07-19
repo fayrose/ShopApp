@@ -59,25 +59,25 @@
 				controller:'AuthCtrl as ctrl',
 			})
 
-			.state('shop.product',{
+			.state('product',{
 				url:'/product/:productId',
 				controller:'productCtrl as ctrl',
 				templateUrl:'site/partials/product.html',
 			})
 
-			.state('shop.categories',{
+			.state('categories',{
 				url:'/categories/:category',
 				controller:'categoryCtrl as ctrl',
 				templateUrl:'site/partials/category.html',
 			})
 
-			.state('shop.checkout',{
+			.state('checkout',{
 				url:'/checkout',
 				controller:'checkoutCtrl as ctrl',
 				templateUrl:'site/partials/checkout.html',
 			})
 
-			.state('shop.orderconfirmation',{
+			.state('orderconfirmation',{
 				url:'/confirmation',
 				controller:'confirmCtrl as ctrl',
 				templateUrl:'site/partials/confirmation.html',
