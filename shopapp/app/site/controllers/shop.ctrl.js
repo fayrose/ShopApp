@@ -8,7 +8,8 @@
 
 		//TODO #3 Capture resolved products for view
 		shopVm.products;
-
+		shopVm.images = [];
+		shopVm.background_image = choose_background(shopVm.images);
 		//watch for any changes to model data
 		$scope.$watch(function(){
 	    	return productSrv.products;
@@ -17,6 +18,8 @@
 		});
 	}
 
+	function choose_background(images) {
+		return images[Math.floor(Math.random()*images.length)];
+	}
+
 })();
-
-
