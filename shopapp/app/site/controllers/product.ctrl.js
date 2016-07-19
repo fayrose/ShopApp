@@ -73,7 +73,6 @@
 				quantity: productVm.quantity
 			};
 			productSrv.addProduct(product);
-			/*
 			document.getElementsByName('add-product').value = "Product added!";
 			productVm.name = "";
 			productVm.image = "";
@@ -81,7 +80,6 @@
 			productVm.categories = "";
 			productVm.price = "";
 			productVm.quantity = "";
-			*/
 		}
 
 		function updateProduct(){
