@@ -68,7 +68,7 @@
 			.state('home.product',{
 				url:'/product/:productId',
 				controller:'homeCtrl as ctrl',
-				templateUrl:'site/partials/home.html',
+				templateUrl:'site/partials/product.html',
 			})
 
 			.state('home.categories',{
