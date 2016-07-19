@@ -1,0 +1,28 @@
+<div id="login-page" class="login-page">
+  <div id="main-content" class="auth main-content">
+    <div class="banner-wrapper registration-header">
+      <h3>Admin Panel</h3>
+    </div>
+    <div class="container-fluid">
+      <div class="login-wrapper">
+        <div class="login-form clearfix">
+          <form method="post" class="stacked-form">
+            <div class="row">
+              <div class="col-xs-12">
+                <span class="field-validation-valid" data-valmsg-for="EmailAddress" data-valmsg-replace="true"></span>
+                <input ng-model="ctrl.email" class="form-input bs-input-box stacked-input-box" type="text" name="EmailAddress" value="" placeholder="Email Address" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" ng-model="ctrl.email" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                <input ng-model="ctrl.password" class="form-input bs-input-box stacked-input-box" type="password" name="Password" placeholder="Password" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" ng-model="ctrl.password" />
+              </div>
+            </div>
+            <input type="submit" value="{{ctrl.auth_btn}}" class="form-input btn btn-primary bs-form__button btn-lg stacked-input-box" ng-click="ctrl.login()" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

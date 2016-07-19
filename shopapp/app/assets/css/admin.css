@@ -1,0 +1,69 @@
+#admin {
+	background:white !important;
+	height:100%;
+	width:100%;
+	font-size:0;
+}
+#admin h3{
+	font-size:2.5rem;
+	color:white;
+}
+#admin .nav-panel{
+	background:#ff6d37;
+	padding:40px;
+	width:25%;
+	height:100%;
+	float:left;
+	font-size:1rem;
+}
+
+#admin .nav-panel ul{
+	list-style: none;
+	padding:0px;
+	margin:40px 0px;
+}
+
+#admin .nav-panel ul li{
+	margin:10px 0px;
+	color:white;
+	font-size:2rem;
+	font-weight:200;
+}
+#admin .nav-panel ul li > a{
+	color:white;
+}
+#admin .nav-panel ul li:hover{
+	color:#2b96ff;
+}
+
+#admin .main-content{
+	background: white;
+	float:left;
+	padding:40px;
+	width:75%;
+	font-size:1rem;
+	color:#555;
+
+}
+
+#admin .products-list a{
+	color:#2b96ff;
+}
+#admin .product-frm{
+	width:50%;
+	min-width:400px;
+}
+
+#admin label{
+	display: block;
+	font-size:1rem;
+	font-weight:200;
+	margin-bottom:5px;
+}
+
+#admin .product-frm input, #admin .product-frm textarea, #admin .product-frm select{
+	width:100%;
+}
+#admin .product-frm select{
+	font-size:1rem;
+}

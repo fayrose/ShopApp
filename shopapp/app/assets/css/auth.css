@@ -1,0 +1,152 @@
+/* Login Page - blue header with BrainStation logo */
+.login-page > .navbar {
+  background-color: #2b96ff;
+  margin: 0;
+  color: #fff;
+  height: 65px;
+  line-height: 65px;
+  border: 0px solid transparent;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.login-page h3{
+  font-size:2rem;
+  color:#555;
+}
+/* BrainStation logo */
+.logo {
+    width: 34px;
+    display: block;
+}
+
+/* Main Content - login form */
+.login-page .main-content {
+  padding-top: 65px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-page .registration-header {
+  color: white;
+  font-size: 34px;
+  width: 100%;
+  margin: 80px auto 0 auto;
+  text-align: center;
+}
+
+.login-page .btn-primary {
+  background-color: #ff6d37;
+  outline:none;
+}
+
+.login-page .btn-primary:hover {
+  background-color: #FF5B1E;
+  border-color: #FF5B1E;
+}
+
+.login-page .help-links p {
+  margin-top: 0;
+}
+
+.login-page .help-links a {
+  cursor: pointer;
+}
+
+
+
+@media only screen and (min-width:  768px ) {
+  .banner-wrapper.registration-header {
+    padding: 40px 0 10px;
+    width: 53%;
+  }
+}
+
+
+
+/*.login-form {
+  margin: auto;
+  width: 400px;
+  max-width: 100%;
+  padding: 20px 0;
+}*/
+
+  /* Button */
+
+  .bs-form__button.stacked-input-box {
+    margin-bottom: 20px;
+}
+
+.bs-form__button.btn-lg {
+    height: 47px;
+}
+.form-input.btn-primary {
+    border: 0;
+    color: #fff;
+}
+
+.bs-form__button {
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+.form-input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    padding-left: 15px;
+    font-size: 13px;
+    font-family: 'Open Sans', "Helvetica", "Arial", sans-serif;
+    border: 1px solid #d6d6d6;
+    color: #808080;
+    border-radius: 2px;
+}
+
+.login-shade-text {
+    color: #a3a3a3;
+    font-size: 13px;
+}
+
+.login-shade-text >a{
+  color:inherit;
+}
+
+
+
+a.sign-in-link.small-text {
+    font-size: 13px;
+}
+a.sign-in-link {
+    color: #3397FA;
+}
+
+
+/* Unnecessary style rules below */
+
+/*.banner-wrapper.error {
+  background: #ea6f6f;
+  color: #fff;
+  font-weight: bold;
+  border-bottom-color: #a60000;
+  border: none;
+}
+.banner-wrapper .close {
+  opacity: 1;
+}
+.banner-wrapper .close a {
+  color: #fff;
+}
+.banner-wrapper .close a:hover {
+  text-decoration: none;
+}
+.banner-wrapper .nav {
+  margin: auto;
+  display: inline-block;
+}
+.banner-wrapper h2 {
+  margin: 0;
+}*/
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- App Styles -->
+	<!-- build:css css/app.min.css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/_ui.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/auth.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/admin.css">
+	<!-- endbuild -->
+
+	<title>Shop App</title>
+
+	<!-- build:js js/app.min.js -->
+	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+	<!-- Vendor -->
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+
+	<!-- App Controllers -->
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="site/controllers/shop.ctrl.js"></script>
+	<script type="text/javascript" src="site/controllers/admin.ctrl.js"></script>
+	<script type="text/javascript" src="site/controllers/auth.ctrl.js"></script>
+	<script type="text/javascript" src="site/controllers/product.ctrl.js"></script>
+
+	<!-- App Services -->
+	<script type="text/javascript" src="site/services/api.srv.js"></script>
+	<script type="text/javascript" src="site/services/products.srv.js"></script>
+	<!-- endbuild -->
+	
+</head>
+<body ng-app="shopApp">
+
+	<div ui-view class="wrapper"></div>
+
+</body>
+</html>

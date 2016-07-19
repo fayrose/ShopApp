@@ -1,0 +1,36 @@
+<h3>
+	Edit Product
+</h3>
+<!-- 	TODO #2: Populate fields with product data -->
+<article class="product-frm">
+		<div>
+			<label>Name</label>
+			<input type="text" name="name"  required>
+		</div>
+		<div>
+			<label>Image Url</label>
+			<input type="text" name="image" required>
+		</div>
+		<div>
+			<label>Description</label>
+			<textarea type="text" name="description" required></textarea>
+		</div>
+		<div>
+			<label>Category</label>
+			<!-- TODO #2: Set Options -->
+			<select name="category">
+			</select>
+		</div>
+		<div>
+			<label>Price</label>
+			<input type="number" name="price"  required>
+		</div>
+		<div>
+			<label>Quantity</label>
+			<input type="number" name="quantity"  required>
+		</div>
+		<div>
+			<button type="submit" >{{ctrl.product_update_btn}}</button>
+			<button type="submit" >{{ctrl.product_delete_btn}}</button>
+		</div>
+</article>
