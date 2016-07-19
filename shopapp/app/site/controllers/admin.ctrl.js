@@ -39,7 +39,7 @@
 
 		function logout(){
 			localStorage.removeItem('authToken');
-			$state.go('auth');
+			$state.go('login');
 		}
 
 	}
