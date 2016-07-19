@@ -62,7 +62,7 @@
 			.state('home',{
 				url:'/home',
 				controller:'homeCtrl as ctrl',
-				templateUrl:'site/partials/home.html',
+				templateUrl:'site/partials/shop-main.html',
 			})
 
 			.state('home.product',{
