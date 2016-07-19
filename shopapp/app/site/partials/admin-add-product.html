@@ -3,35 +3,35 @@
 </h3>
 
 <article class="product-frm">
-	<form name="add-product" ng-submit="ctrl.addProduct()">
+	<form name="add-product" class="form-group" ng-submit="ctrl.addProduct()">
 
 		<div>
 			<label>Name</label>
-			<input type="text" name="name" ng-model="ctrl.name" required>
+			<input type="text" class="form-control" name="name" ng-model="ctrl.name" required>
 		</div>
 		<div>
 			<label>Image</label>
-			<input type="text" name="image" ng-model="ctrl.image" required>
+			<input type="text" class="form-control" name="image" ng-model="ctrl.image" required>
 		</div>
 		<div>
 			<label>Description</label>
-			<textarea type="text" name="name" ng-model="ctrl.description" required></textarea>
+			<textarea type="text" class="form-control" name="name" ng-model="ctrl.description" required></textarea>
 		</div>
 		<div>
 			<label>Category</label>
-			<select ng-options="option.value as option.label for option in ctrl.categories" ng-model="ctrl.category" name="category">
+			<select ng-options="option.value as option.label for option in ctrl.categories" class="form-control" ng-model="ctrl.category" name="category">
 			</select>
 		</div>
 		<div>
 			<label>Price</label>
-			<input type="number" name="price" ng-model="ctrl.price" required>
+			<input type="number" class="form-control" name="price" ng-model="ctrl.price" required>
 		</div>
 		<div>
 			<label>Quantity</label>
-			<input type="number" name="quantity" ng-model="ctrl.quantity" required>
+			<input type="number" class="form-control" name="quantity" ng-model="ctrl.quantity" required>
 		</div>
 		<div>
-			<button type="submit" name="add-product" ng-click="ctrl.addProduct()">Add Product</button>
+			<button type="submit" class="btn btn-default" name="add-product" ng-click="ctrl.addProduct()">Add Product</button>
 		</div>
 	</form>
 </article>

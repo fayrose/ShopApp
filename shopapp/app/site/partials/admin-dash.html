@@ -9,14 +9,14 @@
 <div ng-show="ctrl.is_products">
 	<table class="products-list table">
 		<tr>
-			<th>Category</th>
+			<th>ID</th>
 			<th>Name</th>
 			<th>Price</th>
 			<th>Quantity</th>
 			<th>&nbsp;</th>
 		</tr>
 		<tr ng-repeat="product in ctrl.products">
-			<td>{{product.category}}</td>
+			<td>{{product.id}}</td>
 			<td>{{product.name}}</td>
 			<td>{{product.price}}</td>
 			<td>{{product.quantity}}</td>

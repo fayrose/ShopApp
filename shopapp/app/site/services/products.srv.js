@@ -39,7 +39,7 @@
 				if(res.status === 200){
 					//product was added successfully
 					self.products.push(res.data.product);
-					state.go('admin.dash');
+					$state.go('admin.dash');
 				}
 			})
 		}

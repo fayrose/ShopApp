@@ -11,7 +11,7 @@
 			{label:'Dolls',value:'dolls'},
 			{label:'Fabric',value:'fabric'},
 			{label:'Woodwork',value:'woodwork'},
-			{label:'Jewlery',value:'jewlery'},
+			{label:'Jewelry',value:'jewelry'},
 		];
 		productVm.product = [
 			{id:1, category:'Dolls', name:'Cabbage Patch Kid',price:'$250', quantity:'10'},
@@ -68,7 +68,7 @@
 				name: productVm.name,
 				image: productVm.image,
 				description: productVm.description,
-				category: productVm.categories,
+				category: productVm.categories.label,
 				price: productVm.price,
 				quantity: productVm.quantity
 			};

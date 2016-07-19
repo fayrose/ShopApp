@@ -11,7 +11,7 @@ Install front end dependencies by navigating to app folder:
 Then running:
 	bower install
 
-To start server from root folder (go back a folder with cd ../) with : 
+To start server from root folder (go back a folder with cd ../) with :
 	node api/server.js
 
 
@@ -22,11 +22,11 @@ Initialize Admin Account:
 #TODOs
 NOTE THERE IS NO TODO #1's, only #2's and #3's. To Do ones are for the API and they are complete in this version of the app.
 
-1. 	Complete Admin Panel in app/site/controllers/product.ctrl.js 
+1. 	Complete Admin Panel in app/site/controllers/product.ctrl.js
 	resolve in app.js
 	view app/partials/admin-edit-product.html
 
 
 2. 	Complete Shop front page in app/site/controllers/shop.ctrl.js
-	resolve in app.js 
+	resolve in app.js
 	view app/partials/shop-main.html
