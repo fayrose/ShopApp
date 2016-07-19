@@ -51,7 +51,7 @@
 				if(res.status === 200){
 					//product was updated successfully
 					self.updateProductList(product,productId);
-					
+
 				}
 			})
 		}
@@ -64,7 +64,7 @@
 					//product was deleted successfully
 					self.removeProduct(productId);
 					state.go('admin.dash');
-					
+
 				}
 			})
 		}
