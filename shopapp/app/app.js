@@ -59,15 +59,9 @@
 				controller:'AuthCtrl as ctrl',
 			})
 
-			.state('home',{
-				url:'/home',
-				controller:'homeCtrl as ctrl',
-				templateUrl:'site/partials/shop-main.html',
-			})
-
 			.state('home.product',{
 				url:'/product/:productId',
-				controller:'homeCtrl as ctrl',
+				controller:'productCtrl as ctrl',
 				templateUrl:'site/partials/product.html',
 			})
 
