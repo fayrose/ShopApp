@@ -7,7 +7,7 @@
 	angular
 		.module('shopApp')
 		.config(function($stateProvider, $httpProvider,$urlRouterProvider){
-			
+
 			$urlRouterProvider.otherwise('/');
 
 			$stateProvider
@@ -41,22 +41,52 @@
 				controller:'AdminCtrl as ctrl',
 			})
 
-			.state('admin.add_product',{
-				url:'/add_product',
+			.state('admin.newproduct',{
+				url:'/newproduct',
 				controller:'ProductCtrl as ctrl',
 				templateUrl:'site/partials/admin-add-product.html'
 			})
 
-			.state('admin.edit_product',{
-				url:'/edit_product/:productId',
+			.state('admin.editproduct',{
+				url:'/editproduct/:productId',
 				controller:'ProductCtrl as ctrl',
 				templateUrl:'site/partials/admin-edit-product.html',
 			})
 
-			.state('auth',{
-				url:'/auth',
+			.state('login',{
+				url:'/login',
 				templateUrl:'site/partials/auth-main.html',
 				controller:'AuthCtrl as ctrl',
+			})
+
+			.state('home',{
+				url:'/home',
+				controller:'homeCtrl as ctrl',
+				templateUrl:'site/partials/home.html',
+			})
+
+			.state('home.product',{
+				url:'/product/:productId',
+				controller:'homeCtrl as ctrl',
+				templateUrl:'site/partials/home.html',
+			})
+
+			.state('home.categories',{
+				url:'/categories/:category',
+				controller:'categoryCtrl as ctrl',
+				templateUrl:'site/partials/category.html',
+			})
+
+			.state('home.checkout',{
+				url:'/checkout',
+				controller:'checkoutCtrl as ctrl',
+				templateUrl:'site/partials/checkout.html',
+			})
+
+			.state('home.orderconfirmation',{
+				url:'/confirmation',
+				controller:'confirmCtrl as ctrl',
+				templateUrl:'site/partials/confirmation.html',
 			});
 
 			$httpProvider.interceptors.push(function(){
@@ -75,4 +105,3 @@
 		   });
 		});
 })();
-
