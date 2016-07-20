@@ -13,12 +13,7 @@
 			{label:'Protective Supplies',value:'Protective Supplies'},
 			{label:'Clothing Supplies',value:'Clothing Supplies'},
 		];
-		productVm.product = [
-			{id:1, category:'Dolls', name:'Cabbage Patch Kid',price:'$250', quantity:'10'},
-			{id:2, category:'Fabric', name:'leather', price:'$45', quantity:'40'},
-			{id:3, category:'Woodwork', name:'table', price:'$4100', quantity:'2'},
-			{id:4, category:'Jewelry', name:'ring', price:'$50000', quantity:'10'},
-		];
+		productVm.product = [];
 		productVm.product_update_btn = 'Update Product';
 		productVm.product_delete_btn = 'Remove Product';
 

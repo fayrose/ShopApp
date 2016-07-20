@@ -1,10 +1,16 @@
-(function()){
+(function(){
 	angular
-	.module('shopApp')
-	.controller('cartCtrl', cartCtrl);
+		.module('shopApp')
+		.controller('cartCtrl',cartCtrl)
 
-	function CartCtrl () {
+	function cartCtrl($scope,$state){
 		var cartVm = this;
-		// body...
+
+		cartVm.checkout = checkout;
+
+		function checkout() {
+			$state.go("checkout");
+		}
 	}
-}
+
+})();
