@@ -39,7 +39,16 @@
 		productVm.deleteProduct = deleteProduct;
 		productVm.listProducts = listProducts;
 		productVm.is_products = is_products;
+		productVm.goUpdate = goUpdate;
+		productVm.goBack = goBack;
 
+		function goBack(){
+			$state.go("admin.dash");
+		}
+
+		function goUpdate(productId) {
+			$state.go('admin.editproduct',{productId:productId});
+		}
 
 		function is_products(){
 		// 	var show = '';

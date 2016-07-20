@@ -82,6 +82,12 @@
 				templateUrl:'site/partials/cart.html',
 			})
 
+			.state('admin.view',{
+				url:'/view/:productId',
+				controller:'ProductCtrl as ctrl',
+				templateUrl:'site/partials/admin-view-product.html',
+			})
+
 			.state('orderconfirmation',{
 				url:'/confirmation',
 				controller:'confirmCtrl as ctrl',

@@ -41,7 +41,7 @@
 		}
 
 		function viewProduct(product) {
-			$state.go('product', {productId:product.id});
+			$state.go('admin.view', {productId:product.id});
 		}
 
 		function deleteProduct(productid) {
