@@ -33,9 +33,14 @@
 		//public functions
 		adminVm.editProduct = editProduct;
 		adminVm.logout = logout;
+		adminVm.viewProduct = viewProduct;
 
 		function editProduct(product){
 			$state.go('admin.editproduct',{productId:product.id});
+		}
+
+		function viewProduct(product) {
+			$state.go('product', {productId:product.id});
 		}
 
 		function logout(){

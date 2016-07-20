@@ -61,7 +61,7 @@
 
 			.state('product',{
 				url:'/product/:productId',
-				controller:'productCtrl as ctrl',
+				controller:'ProductCtrl as ctrl',
 				templateUrl:'site/partials/product.html',
 			})
 

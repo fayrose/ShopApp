@@ -4,7 +4,7 @@
 	.module('shopApp')
 	.controller('ProductCtrl',ProductCtrl);
 
-	function ProductCtrl($stateParams,api,productSrv, $state){
+	function ProductCtrl($stateParams,api,productSrv,$state) {
 		var productVm = this;
 
 		productVm.categories = [
