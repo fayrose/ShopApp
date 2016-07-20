@@ -8,10 +8,10 @@
 		var productVm = this;
 
 		productVm.categories = [
-			{label:'Dolls',value:'dolls'},
-			{label:'Fabric',value:'fabric'},
-			{label:'Woodwork',value:'woodwork'},
-			{label:'Jewelry',value:'jewelry'},
+			{label:'Food Supplies',value:'Food Supplies'},
+			{label:'Shelter Supplies',value:'Shelter Supplies'},
+			{label:'Protective Supplies',value:'Protective Supplies'},
+			{label:'Clothing Supplies',value:'Clothing Supplies'},
 		];
 		productVm.product = [
 			{id:1, category:'Dolls', name:'Cabbage Patch Kid',price:'$250', quantity:'10'},
@@ -70,7 +70,7 @@
 				name: productVm.name,
 				image: productVm.image,
 				description: productVm.description,
-				category: productVm.categories.label,
+				category: productVm.category,
 				price: productVm.price,
 				quantity: productVm.quantity
 			};

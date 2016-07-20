@@ -19,6 +19,7 @@
 			<label>Category</label>
 			<!-- TODO #2: Set Options -->
 			<select name="category">
+				<option ng-repeat="category in ctrl.categories" value="{{category.value}}">{{category.label}}</option>
 			</select>
 		</div>
 		<div>
