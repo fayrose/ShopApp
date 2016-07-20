@@ -10,5 +10,6 @@
 -->
 
 <div ng-repeat="product in ctrl.products | filter: {category: ctrl.category}">
-  <h1 style="color: black; font-size: 40px;">{{product.name}}</h1>
+  <img src="{{product.image}}" alt="" />
+  <h3>{{product.name}}</h3>
 </div>
