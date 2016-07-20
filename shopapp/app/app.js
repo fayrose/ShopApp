@@ -69,6 +69,9 @@
 				url:'/categories/:category',
 				controller:'categoryCtrl as ctrl',
 				templateUrl:'site/partials/category.html',
+				resolve:{
+				 products: function(productSrv){
+				 return productSrv.getProducts()}}
 			})
 
 			.state('checkout',{

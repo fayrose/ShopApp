@@ -8,10 +8,10 @@
 		var productVm = this;
 
 		productVm.categories = [
-			{label:'Food Supplies',value:'Food Supplies'},
-			{label:'Shelter Supplies',value:'Shelter Supplies'},
-			{label:'Protective Supplies',value:'Protective Supplies'},
-			{label:'Clothing Supplies',value:'Clothing Supplies'},
+			{label:'Food',value:'Food'},
+			{label:'Shelter',value:'Shelter'},
+			{label:'Safety',value:'Safety'},
+			{label:'Clothing',value:'Clothing'},
 		];
 		productVm.product = [];
 		productVm.product_update_btn = 'Update Product';
@@ -103,9 +103,6 @@
 		}
 
 		function deleteProduct(){
-			//TODO #2
-			//remove product, pass to product service
-			//update text in button
 			 productSrv.deleteProduct(productVm.product.id);
 		}
 
