@@ -34,7 +34,7 @@
 		adminVm.logout = logout;
 
 		function editProduct(product){
-			$state.go('admin.edit_product',{productId:product.id});
+			$state.go('admin.editproduct',{productId:product.id});
 		}
 
 		function logout(){

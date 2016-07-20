@@ -2,18 +2,18 @@
 	Edit Product
 </h3>
 <!-- 	TODO #2: Populate fields with product data -->
-<article class="product-frm">
+<article class="product-frm form-group">
 		<div>
 			<label>Name</label>
-			<input type="text" name="name"  required>
+			<input type="text" name="name" val="" class="form-control" required>
 		</div>
 		<div>
 			<label>Image Url</label>
-			<input type="text" name="image" required>
+			<input type="text" name="image" class="form-control" required>
 		</div>
 		<div>
 			<label>Description</label>
-			<textarea type="text" name="description" required></textarea>
+			<textarea type="text" name="description" class="form-control" required></textarea>
 		</div>
 		<div>
 			<label>Category</label>
@@ -23,14 +23,14 @@
 		</div>
 		<div>
 			<label>Price</label>
-			<input type="number" name="price"  required>
+			<input type="number" name="price" class="form-control" required>
 		</div>
 		<div>
 			<label>Quantity</label>
-			<input type="number" name="quantity"  required>
+			<input type="number" name="quantity" class="form-control" required>
 		</div>
 		<div>
-			<button type="submit" >{{ctrl.product_update_btn}}</button>
-			<button type="submit" >{{ctrl.product_delete_btn}}</button>
+			<button type="submit" class="btn btn-primary">{{ctrl.product_update_btn}}</button>
+			<button type="submit" class="btn btn-danger">{{ctrl.product_delete_btn}}</button>
 		</div>
 </article>
