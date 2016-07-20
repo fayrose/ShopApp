@@ -102,6 +102,8 @@
 			//TODO #2
 			//remove product, pass to product service
 			//update text in button
+			 productSrv.deleteProduct(productVm.product.id);
+			 $state.go("admin.dash");
 		}
 
 	}

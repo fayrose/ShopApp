@@ -15,7 +15,7 @@
 			<th>Quantity</th>
 			<th>&nbsp;</th>
 		</tr>
-		<tr ng-repeat="product in ctrl.products">
+		<tr ng-repeat="product in ctrl.products track by $index">
 			<td>{{product.id}}</td>
 			<td>{{product.name}}</td>
 			<td>{{product.price}}</td>
