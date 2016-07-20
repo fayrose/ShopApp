@@ -8,7 +8,7 @@
 
 		//TODO #3 Capture resolved products for view
 		shopVm.products;
-		shopVm.images = [];
+		shopVm.images = ["assets/img/img-hero-1.jpg" ];
 		shopVm.background_image = choose_background(shopVm.images);
 		//watch for any changes to model data
 		$scope.$watch(function(){

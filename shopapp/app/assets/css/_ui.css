@@ -81,7 +81,7 @@ Top-content
 */
 .top-content{
 	width:100%;
-	height:calc(70% - 110px);
+	height: 500px;
 	background-size:cover;
 	background-position:center center;
 	text-align: center;
