@@ -63,8 +63,6 @@
 				if(res.status === 200){
 					//product was deleted successfully
 					self.removeProduct(productId);
-					$state.go('admin.dash');
-
 				}
 			})
 		}
@@ -89,9 +87,10 @@
 		function removeProduct(productId){
 			for(var i=0;i < self.products.length;i++){
 				if(self.products[i].id == productId){
-					delete self.products[i];
+					self.products.splice(i, 1);
 				}
 			}
+			$state.go("admin.dash");
 		}
 	}
 })();

@@ -23,8 +23,9 @@
 		$scope.$watch(function(){
 	    	return productSrv.products;
 		}, function (newValue) {
+			console.log(productSrv.products.length)
 			if(productSrv.products.length > 0){
-			    adminVm.products = productSrv.products;
+					adminVm.products = productSrv.products;
 			    adminVm.is_products = true;
 			}
 		});
