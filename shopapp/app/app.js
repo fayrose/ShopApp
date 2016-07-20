@@ -76,6 +76,11 @@
 				controller:'checkoutCtrl as ctrl',
 				templateUrl:'site/partials/checkout.html',
 			})
+			.state('cart',{
+				url:'/cart',
+				controller:'cartCtrl as ctrl',
+				templateUrl:'site/partials/cart.html',
+			})
 
 			.state('orderconfirmation',{
 				url:'/confirmation',
