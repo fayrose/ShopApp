@@ -4,7 +4,7 @@
 	.module('shopApp')
 	.controller('ProductCtrl',ProductCtrl);
 
-	function ProductCtrl($stateParams,api,productSrv){
+	function ProductCtrl($stateParams,api,productSrv, $state){
 		var productVm = this;
 
 		productVm.categories = [
@@ -85,9 +85,17 @@
 		}
 
 		function updateProduct(){
-			//TODO #2
-			//create product object, pass to product service
-			//Update text in button
+			product = {
+				name: productVm.product.name,
+				image: productVm.product.image,
+				description: productVm.product.description,
+				category: productVm.product.category,
+				price: productVm.product.price,
+				quantity: productVm.product.quantity
+			};
+			console.log(product)
+			productSrv.updateProduct(product,productVm.product.id);
+			$state.go("admin.dash");
 		}
 
 		function deleteProduct(){
