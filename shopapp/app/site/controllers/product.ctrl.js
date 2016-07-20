@@ -45,6 +45,7 @@
 		productVm.listProducts = listProducts;
 		productVm.is_products = is_products;
 
+
 		function is_products(){
 		// 	var show = '';
 		// 	var hide = '';
@@ -60,6 +61,7 @@
 				products.push(item);
 			}
 		}
+
 		function addProduct(){
 			//TODO #2
 			//create product object, pass to product service
@@ -93,6 +95,6 @@
 			//remove product, pass to product service
 			//update text in button
 		}
-	}
 
+	}
 })();
