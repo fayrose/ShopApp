@@ -1,4 +1,4 @@
-(funtion()){
+(function()){
 	angular
 	.module('shopApp')
 	.controller('cartCtrl', cartCtrl);
