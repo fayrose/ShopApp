@@ -34,6 +34,7 @@
 		adminVm.editProduct = editProduct;
 		adminVm.logout = logout;
 		adminVm.viewProduct = viewProduct;
+		adminVm.deleteProduct = deleteProduct;
 
 		function editProduct(product){
 			$state.go('admin.editproduct',{productId:product.id});
@@ -41,6 +42,14 @@
 
 		function viewProduct(product) {
 			$state.go('product', {productId:product.id});
+		}
+
+		function deleteProduct(productid) {
+			productSrv.deleteProduct(productid);
+			if (productSrv.products.length == 0) {
+				adminVm.products = productSrv.products;
+				adminVm.is_products = false;
+			}
 		}
 
 		function logout(){
