@@ -223,3 +223,12 @@ Product view
 	font-weight:500;
 	margin:10px 0px;
 }
+
+.body-text{
+	font-family: 'Roboto', sans-serif;
+	 font-weight: 200;
+	 margin: 0 auto;
+	 font-size: 1.2vw;
+	 line-height: 2vw;
+	 padding: 25px 0;
+}
