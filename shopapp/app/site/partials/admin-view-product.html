@@ -1,0 +1,34 @@
+<h3>View Product</h3>
+
+<article class="product-frm form-group">
+
+    <div>
+      {{ctrl.product.image}}
+    </div>
+
+    <div>
+      Name: {{ctrl.product.name}}
+    </div>
+
+    <div>
+      Description: {{ctrl.product.description}}
+    </div>
+
+    <div>
+      Category: {{category.label}}
+    </div>
+
+    <div>
+      Price: {{ctrl.product.price}}
+    </div>
+
+    <div>
+      Quantity: {{ctrl.product.quantity}}
+    </div>
+
+    <div>
+      <button type="submit" class="btn btn-primary" ng-click="ctrl.updateProduct()">{{ctrl.product_update_btn}}</button>
+      <button type="submit" class="btn btn-danger" ng-click="ctrl.deleteProduct()">{{ctrl.product_delete_btn}}</button>
+    </div>
+
+</article>
