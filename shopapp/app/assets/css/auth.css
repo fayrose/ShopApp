@@ -35,6 +35,15 @@
   text-align: center;
 }
 
+.form-control {
+  border-radius: 0px;
+}
+
+.btn {
+  border-radius: 0px;
+  margin-top: 5px;
+}
+
 .login-page .btn-primary {
   background-color: #ff6d37;
   outline:none;
