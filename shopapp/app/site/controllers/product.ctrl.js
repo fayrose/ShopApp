@@ -93,7 +93,7 @@
 				name: productVm.product.name,
 				image: productVm.product.image,
 				description: productVm.product.description,
-				category: productVm.product.category,
+				category: $("select[name='category']").val(),
 				price: productVm.product.price,
 				quantity: productVm.product.quantity
 			};
