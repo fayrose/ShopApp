@@ -114,6 +114,7 @@
 			else {
 				cartSrv.addtoCart(product, quantity);
 				$state.go("cart");
+				$('#error_message').hide();
 		}
 
 		}
