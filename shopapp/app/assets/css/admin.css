@@ -129,5 +129,6 @@ tr:nth-child(even) {
 
 .admin-view-description {
 	width: 600px;
+	text-align: justify;
 }
 
