@@ -10,7 +10,7 @@
 		checkoutVm.subtotal = cartSrv.calcSubtotal();
 		checkoutVm.total = cartSrv.calcTotal();
 		checkoutVm.cart = getCart();
-		checkoutVm.products = productSrv.listProducts();
+		checkoutVm.products = productSrv.getProducts();
 
 		function submitForm() {
 			$state.go('orderconfirmation');
