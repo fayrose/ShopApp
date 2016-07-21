@@ -97,7 +97,7 @@ td:first-child + td {
 }
 
 td:first-child + td + td {
-	width: 300px;
+	width: 310px;
 }
 
 tr:first-child {
