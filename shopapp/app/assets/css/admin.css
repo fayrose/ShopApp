@@ -123,4 +123,8 @@ tr:nth-child(even) {
 	border: 1px solid #666;
 }
 
+.admin-view-title {
+	font-size: 1.5em;
+}
+
 
