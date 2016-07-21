@@ -15,7 +15,6 @@
 				url:'/',
 				templateUrl:'site/partials/shop-main.html',
 				controller:'ShopCtrl as ctrl',
-				//TODO #3 resolve products before main page load
 				resolve:{
 					products:function(productSrv){
 						return productSrv.getProducts();
@@ -27,7 +26,6 @@
 				url:'/admin',
 				templateUrl:'site/partials/admin.html',
 				controller:'AdminCtrl as ctrl',
-				//TODO #2 Resolve Products before admin page load
 				resolve:{
 					products:function(productSrv){
 						return productSrv.getProducts();

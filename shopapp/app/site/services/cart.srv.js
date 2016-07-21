@@ -4,10 +4,19 @@
 		.module('shopApp')
 		.service('cartSrv',cartService);
 
-	function cartService($state,api){
+	function cartService(){
 		var self = this;
+
 		//public variables
 		self.cart = [];
+    self.is_cart;
+
+    if (self.cart.length > 0) {
+      self.is_cart = true;
+    }
+    else {
+      self.is_cart = false;
+    }
 
 		//public functions
 		self.getCart = getCart;
@@ -38,5 +47,5 @@
 				}
 			}
 		}
-
+  }
 })();
