@@ -76,6 +76,10 @@ nav .cart{
 	font-size:1.6rem;
 }
 
+.navbar{
+	background-color: #39353C;
+}
+
 /*
 Top-content
 */
@@ -303,8 +307,19 @@ filter:alpha(opacity=100);
 }
 
 
+/*ELLIOTT*/
 
+#iconBox {
+    border-radius: 25px;
+    background-color: #39353C;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
 
+.navbar {
+	background-color: #39353C;
+}
 
 
 

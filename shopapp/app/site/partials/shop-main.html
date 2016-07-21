@@ -1,13 +1,42 @@
-<nav>
-	<div class="content-wrapper">
-		<ul class="left-nav">
-			<li><img src="assets/img/logo.png"></li>
-		</ul>
-		<ul class="right-nav">
-			<li><i class="fa fa-shopping-cart"></i><span class="cart">Cart</span></li>
-		</ul>
-	</div>
-</nav>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Start Journey</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
 <section class="top-content" role="topbanner" ng-style="{'background-image': 'url({{ctrl.background_image}})'}">
 	<div class="content-wrapper">
@@ -15,10 +44,10 @@
 			<div class="table-cell">
 				<div class="content">
 					<h1>
-						Manage Your Closet.
+						The Entity
 					</h1>
 					<h3>
-						Buy and Sell used fashion items from virtually anywhere.
+						A place to get all of you End of Days products.
 					</h3>
 
 					<div class="">
@@ -36,22 +65,6 @@
 	</div>
 </section>
 
-
-<section class="secondary-nav" role="sub-nav">
-	<div class="content-wrapper">
-		<!-- TO DO #3: SET CATEGORY SEARCH AND SET FOCUS CLASS-->
-		<ul class="product-nav">
-			<li ><a>All</a></li>
-			<li ><a>Shoes</a></li>
-			<li ><a>Shirts</a></li>
-			<li ><a>Pants</a></li>
-			<li ><a>Outerwear</a></li>
-			<li ><a>Accessories</a></li>
-		</ul>
-	</div>
-</section>
-
-
 <section class="product-view" role="product-view">
 	<div class="content-wrapper">
 		<div class="row">
@@ -61,12 +74,14 @@
 					<div class="product-buy">
 						<div class="table-view">
 							<div class="table-cell">
-								<i class="fa fa-cutlery"></i>
+								<div class="page-scroll">
+									<i class="fa fa-cutlery"></i>
+								</div><!-- /page-scroll -->
 							</div>
 						</div>
 					</div>
 					<!-- SET PRODUCT IMAGE -->
-					<div ng-click="ctrl.toCategory('Food')" class="iconBox">
+					<div ng-click="ctrl.toCategory('Food')" id="iconBox">
 					<p>FOOD</p>
 					</div>
 				</div>
@@ -76,12 +91,14 @@
 					<div class="product-buy">
 						<div class="table-view">
 							<div class="table-cell">
-								<i class="fa fa-home"></i>
+								<div class="page-scroll">
+									<i class="fa fa-home"></i>
+								</div><!-- /page-scroll -->
 							</div>
 						</div>
 					</div>
 					<!-- SET PRODUCT IMAGE -->
-					<div ng-click="ctrl.toCategory('Shelter')" class="iconBox">
+					<div ng-click="ctrl.toCategory('Shelter')" id="iconBox">
 					<p>SHELTER</p>
 					</div>
 				</div>
@@ -91,31 +108,37 @@
 					<div class="product-buy">
 						<div class="table-view">
 							<div class="table-cell">
-								<i class="fa fa-life-ring"></i>
+								<div class="page-scroll">
+									<i class="fa fa-life-ring"></i>
+								</div><!-- /page-scroll -->
 							</div>
 						</div>
 					</div>
 					<!-- SET PRODUCT IMAGE -->
-					<div ng-click="ctrl.toCategory('Safety')" class="iconBox">
+					<div ng-click="ctrl.toCategory('Safety')" id="iconBox">
 					<p>SAFETY</p>
 					</div>
 				</div>
 			</div>
+
 			<div class="col-xs-12 col-sm-3">
 				<div id="product-card" class="product-card">
 					<div class="product-buy">
 						<div class="table-view">
 							<div class="table-cell">
-								<i class="fa fa-leaf"></i>
+								<div class="page-scroll">
+									<i class="fa fa-leaf"></i>
+								</div><!-- /page-scroll -->
 							</div>
 						</div>
 					</div>
 					<!-- SET PRODUCT IMAGE -->
-					<div ng-click="ctrl.toCategory('Clothing')" class="iconBox">
+					<div ng-click="ctrl.toCategory('Clothing')" id="iconBox">
 					<p>CLOTHING</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	
 <section>

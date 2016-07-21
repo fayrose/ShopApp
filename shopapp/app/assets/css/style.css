@@ -1,0 +1,16 @@
+body {
+	background-color: #e3e0ea;
+};
+
+.navbar {
+	background-color: #39353C;
+	height:100px;
+}
+
+#iconBox {
+    border-radius: 25px;
+    background-color: #39353C;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
