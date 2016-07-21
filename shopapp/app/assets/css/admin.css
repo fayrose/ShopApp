@@ -114,6 +114,13 @@ tr:nth-child(even) {
     cursor: pointer;
 }
 
+.admin-dash-no-products {
+	color: white;
+	width: 100px;
+	padding: 5px;
+	background-color: red;
+}
+
 /* IMPROVEMENTS - admin-view.html */
 
 .admin-view {
