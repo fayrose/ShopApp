@@ -34,6 +34,10 @@
 	color:white;
 }
 
+#admin .nav-panel ul li > a:active {
+	background-color: #fff;
+}
+
 #admin .nav-panel ul li > a:hover {
 	color: #ccc;
 }
