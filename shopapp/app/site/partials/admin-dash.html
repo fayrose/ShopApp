@@ -1,8 +1,8 @@
 <h3 style="color:black">Products</h3>
 
 <div ng-hide="ctrl.is_products">
-	<p>
-		You have no products
+	<p class="admin-dash-no-products">
+		There are no products in stock. Click <a href="http://localhost:8080/#/admin/newproduct"><strong>here</strong></a> to add a product.
 	</p>
 </div>
 
@@ -10,19 +10,25 @@
 	<table class="products-list table">
 		<tr>
 			<th>ID</th>
+			<th>Image</th>
 			<th>Name</th>
+			<th>Category</th>
 			<th>Price</th>
-			<th>Quantity</th>
-			<th>&nbsp;</th>
+			<th>Stock</th>
+			<th><em>View</em></th>
+			<th><em>Edit</em></th>
+			<th><em>Delete</em></th>
 		</tr>
 		<tr ng-repeat="product in ctrl.products track by $index">
 			<td>{{product.id}}</td>
-			<td>{{product.name}}</td>
-			<td>{{product.price}}</td>
+			<td><img class="dashboard_list_img" ng-src="{{product.image}}"/></td>
+			<td><em>{{product.name}}</em></td>
+			<td>{{product.category}}</td>
+			<td>{{product.price | currency : "CAD$ " : 2}}</td>
 			<td>{{product.quantity}}</td>
-			<td><a ng-click="ctrl.viewProduct(product)">View</a></td>
-			<td><a ng-click="ctrl.editProduct(product)">Edit</a></td>
-			<td><a ng-click="ctrl.deleteProduct(product.id)">Delete</a></td>
+			<td><a ng-click="ctrl.viewProduct(product)" class="pointer">View</a></td>
+			<td><a ng-click="ctrl.editProduct(product)" class="pointer">Edit</a></td>
+			<td><a ng-click="ctrl.deleteProduct(product.id)" class="pointer">Delete</a></td>
 		</tr>
 	</table>
 </div>

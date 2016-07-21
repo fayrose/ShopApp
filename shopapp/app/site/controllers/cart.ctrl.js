@@ -9,6 +9,7 @@
 		cartVm.checkout = checkout;
 		cartVm.is_cart = cartSrv.is_cart;
 		cartVm.cart = cartSrv.getCart();
+		cartVm.deletefromCart = deletefromCart;
 
 		$scope.$watch(function(){
 	    	return cartSrv.cart;
@@ -20,7 +21,9 @@
 			}
 		});
 
-
+		function deletefromCart(productId) {
+			cartSrv.deletefromCart(productId);
+		}
 
 		function checkout() {
 			$state.go("checkout");

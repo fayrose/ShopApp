@@ -1,35 +1,35 @@
-<h3 style="color:black">View Product</h3>
+<h4 class="admin-view admin-view-header">View Product</h4>
 
-<article class="product-frm form-group">
+<article class="product-frm form-group admin-view">
 
     <h4>
-      Name: {{ctrl.product.name}}
+      <div class="admin-view admin-view-title">{{ctrl.product.name}}</div>
     </h4>
 
     <div>
-      <img src="{{ctrl.product.image}}"/>
+      <div class="admin-view-image"><img src="{{ctrl.product.image}}"/></div>
     </div>
 
-
     <h5>
-      Category: {{ctrl.product.category}}
+      <div class="admin-view admin-view-description"><blockquote><em>{{ctrl.product.description}}</em></blockquote></div>
     </h5>
 
     <h5>
-      Description: {{ctrl.product.description}}
+      <strong>Category</strong>: <em>{{ctrl.product.category}}</em>
     </h5>
 
     <h5>
-      Price: {{ctrl.product.price}}
+      <strong>Price</strong>: {{ctrl.product.price | currency : "CAD$ " : 2}}
     </h5>
 
     <h5>
-      Quantity: {{ctrl.product.quantity}}
+      <strong>Stock</strong>: {{ctrl.product.quantity}}
     </h5>
 
     <div>
-      <button type="submit" class="btn btn-danger" ng-click="ctrl.goBack()">Back</button>
-      <button type="submit" class="btn btn-primary" ng-click="ctrl.goUpdate(ctrl.product.id)">{{ctrl.product_update_btn}}</button>
+      <button type="submit" class="btn btn-info" ng-click="ctrl.goBack()"> &laquo; Back</button>
+      <button type="submit" class="btn btn-warning" ng-click="ctrl.goUpdate(ctrl.product.id)">Edit</button>
+      <button type="submit" class="btn btn-danger" ng-click="ctrl.deleteProduct()">Delete</button>
     </div>
 
 </article>

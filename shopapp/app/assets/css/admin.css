@@ -8,6 +8,7 @@
 	font-size:2.5rem;
 	color:white;
 }
+
 #admin .nav-panel{
 	background:#ff6d37;
 	padding:40px;
@@ -41,9 +42,8 @@
 	float:left;
 	padding:40px;
 	width:75%;
-	font-size:1rem;
+	font-size:1.3rem;
 	color:#555;
-
 }
 
 #admin .products-list a{
@@ -56,8 +56,9 @@
 
 #admin label{
 	display: block;
-	font-size:1rem;
-	font-weight:200;
+	font-size:1.5rem;
+	font-weight: bold;
+	/*font-weight:200;*/
 	margin-bottom:5px;
 }
 
@@ -65,5 +66,101 @@
 	width:100%;
 }
 #admin .product-frm select{
-	font-size:1rem;
+	font-size:2rem;
 }
+
+
+/* IMPROVEMENTS - admin-dash.html */
+
+.dashboard_list_img {
+	height: 30px;
+	width: 50px;
+	border: 1px solid #ccc;
+}
+
+.dashboard_list_img:hover {
+    position:absolute;
+    padding-top: 16px;
+    width: 400px;
+    height: 200px;
+    -moz-box-shadow: 0 0 25px rgba(0,0,0,0.5);
+	  -webkit-box-shadow: 0 0 25px rgba(0,0,0,0.5);
+	  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+	  border: 1px dashed #000;
+}
+
+td {
+	height: 50px;
+}
+
+td:first-child + td {
+	width: 100px;
+}
+
+td:first-child + td + td {
+	width: 310px;
+}
+
+tr:first-child {
+	background-color: #666;
+	color: #fff;
+}
+
+tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.admin-dash-no-products {
+	color: white;
+	width: 400px;
+	padding: 5px;
+	background-color: red;
+	-moz-box-shadow: 0 0 25px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 25px rgba(0,0,0,0.5);
+	box-shadow: 0 0 25px rgba(0,0,0,0.5);
+	border: 1px solid red;
+}
+
+.admin-dash-no-products a {
+	text-decoration: none;
+	color: #666;
+}
+
+/* IMPROVEMENTS - categories.html */
+
+.categories-warning {
+	font-size: 1.5em;
+}
+
+/* IMPROVEMENTS - admin-view.html */
+
+.admin-view {
+	width: 600px;
+}
+.admin-view-header {
+	/*width: 600px;*/
+	border-bottom: 1px solid #ccc;
+	color: #ccc;
+}
+
+.admin-view-image img {
+	width: 600px;
+	-moz-box-shadow: 0 0 25px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 25px rgba(0,0,0,0.5);
+	box-shadow: 0 0 25px rgba(0,0,0,0.5);
+	border: 1px solid #666;
+}
+
+.admin-view-title {
+	font-size: 1.6em;
+}
+
+.admin-view-description {
+	/*width: 600px;*/
+	text-align: justify;
+}
+
