@@ -8,13 +8,13 @@
 		var self = this;
 
 		//public variables
-
 		self.cart = JSON.parse(localStorage.getItem("cart"));
+		
 		if (self.cart == null){
 				localStorage.setItem("cart", JSON.stringify([]));
 				self.cart = JSON.parse(localStorage.getItem("cart"));
 		}
-    self.is_cart;
+    		self.is_cart;
 
     if (self.cart.length > 0) {
       self.is_cart = true;
@@ -28,9 +28,12 @@
 		self.addtoCart = addtoCart;
 		self.removefromCart = removefromCart;
 		self.changeQuantity = changeQuantity;
-    self.setisCart = setisCart;
+    	self.setisCart = setisCart;
 		self.calcSubtotal = calcSubtotal;
 		self.calcTotal = calcTotal;
+
+		//Allow the user to input a new quantity in the cart
+		self.updateCartQuantity = updateCartQuantity;
 
 		function getCart(){
 			return self.cart;
@@ -55,6 +58,7 @@
 			calcTotal();
 		}
 
+<<<<<<< Updated upstream
 		function changeQuantity(productId, new_quantity){
 			product = productSrv.getProduct(productId);
 			for (var i = 0; i < self.cart.length; i++) {
@@ -62,6 +66,15 @@
 					self.cart[i].quantity = new_quantity;
         }
       }
+=======
+		function changeQuantity(productId, quantity){
+		for (var i = 0; i < self.cart.length; i++) {
+	        if (self.cart[i].product.id === productId) {
+	          self.cart[i].quantity = quantity;
+	      	}
+      	}
+      		// alert("changing cart quantity");
+>>>>>>> Stashed changes
 			localStorage.setItem("cart", JSON.stringify(self.cart))
 		}
 
@@ -97,6 +110,12 @@
 		function calcTotal() {
 			return calcSubtotal() * 1.13;
 		}
+
+		function updateCartQuantity(productId,quantity){
+
+		}
+
+
   }
 
 })();

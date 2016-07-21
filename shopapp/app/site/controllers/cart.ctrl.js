@@ -11,6 +11,9 @@
 		cartVm.cart = cartSrv.getCart();
 		cartVm.deletefromCart = deletefromCart;
 
+		// update Cart quantity inside the cart
+		cartVm.updateQuantity = updateQuantity;
+
 		$scope.$watch(function(){
 	    	return cartSrv.cart;
 		}, function (newValue) {
@@ -32,6 +35,11 @@
 
 		function checkout() {
 			$state.go("checkout");
+		}
+
+		// updateQuantity function
+		function updateQuantity(productId, quantity){
+			cartSrv.changeQuantity(productId, quantity);
 		}
 	}
 

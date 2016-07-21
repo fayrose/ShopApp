@@ -57,9 +57,20 @@
       <td>{{item.product.id}}</td>
       <td><img class="dashboard_list_img" ng-src="{{item.product.image}}"/></td>
       <td>{{item.product.name}}</td>
+<<<<<<< Updated upstream
       <td>{{item.product.price * item.quantity | currency: 'CAD $' : 2}}</td>
       <td>{{item.quantity}}</td>
       <td><button type="delete" class="btn btn-danger" ng-click="ctrl.deletefromCart(item.product.id)">Delete</button></td>
+=======
+      <td>{{item.product.price}}</td>
+      <td>
+        <p>Your current quantity is {{item.quantity}}</p>
+        <p>Your new quantity is {{ctrl.quantity}}</p>
+        <input type="number" placeholder='Enter a new quantity' ng-model='ctrl.quantity'>
+        <button ng-click='ctrl.updateQuantity(item.product.id,ctrl.quantity)'>Update Quantity</button>
+      </td>
+      <td><button type="delete" ng-click="ctrl.deletefromCart(item.product.id)">Delete</button></td>
+>>>>>>> Stashed changes
     </tr>
   </table>
   <button class="btn btn-primary" ng-click="ctrl.checkout()">Check out</button>
