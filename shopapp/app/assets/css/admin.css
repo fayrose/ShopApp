@@ -29,6 +29,7 @@
 	font-size:2rem;
 	font-weight:200;
 }
+
 #admin .nav-panel ul li > a{
 	color:white;
 }
@@ -43,7 +44,6 @@
 	width:75%;
 	font-size:1rem;
 	color:#555;
-
 }
 
 #admin .products-list a{
@@ -67,3 +67,40 @@
 #admin .product-frm select{
 	font-size:1rem;
 }
+
+.dashboard_list_img {
+	height: 30px;
+	width: 50px;
+	border: 1px solid #ccc;
+}
+
+.dashboard_list_img:hover {
+    position:absolute;
+    padding-top: 16px;
+    width: 485px;
+    height: 285px;
+    -moz-box-shadow: 0 0 25px rgba(0,0,0,0.5);
+	  -webkit-box-shadow: 0 0 25px rgba(0,0,0,0.5);
+	  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+	  border: 1px dashed #000;
+}
+
+td {
+	height: 50px;
+}
+
+tr:first-child {
+	background-color: #666;
+	color: #fff;
+}
+
+tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+
