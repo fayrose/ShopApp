@@ -118,14 +118,14 @@ tr:nth-child(even) {
 .admin-view {
 	width: 600px;
 }
-.admin-view-header img {
+.admin-view-header {
 	/*width: 600px;*/
 	border-bottom: 1px solid #ccc;
 	color: #ccc;
 }
 
 .admin-view-image img {
-	/*width: 600px;*/
+	width: 600px;
 	-moz-box-shadow: 0 0 25px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 0 0 25px rgba(0,0,0,0.5);
 	box-shadow: 0 0 25px rgba(0,0,0,0.5);
