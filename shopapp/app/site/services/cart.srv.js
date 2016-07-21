@@ -51,6 +51,8 @@
 
 			localStorage.setItem("cart", JSON.stringify(self.cart));
       self.setisCart();
+			calcSubtotal();
+			calcTotal();
 		}
 
 		function changeQuantity(productId, new_quantity){
@@ -71,6 +73,8 @@
 			}
 			localStorage.setItem("cart", JSON.stringify(self.cart));
 			self.setisCart();
+			calcSubtotal();
+			calcTotal();
 		}
 
     function setisCart() {
