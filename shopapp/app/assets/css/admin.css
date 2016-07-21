@@ -80,8 +80,8 @@
 .dashboard_list_img:hover {
     position:absolute;
     padding-top: 16px;
-    width: 485px;
-    height: 285px;
+    width: 465px;
+    height: 265px;
     -moz-box-shadow: 0 0 25px rgba(0,0,0,0.5);
 	  -webkit-box-shadow: 0 0 25px rgba(0,0,0,0.5);
 	  box-shadow: 0 0 25px rgba(0,0,0,0.5);
