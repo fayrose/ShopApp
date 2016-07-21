@@ -54,8 +54,9 @@
 						<form>
 							<!-- TO DO #3: ENABLE PRODUCT SEARCH -->
 							<div class="form-container">
-								<input type="text" class="form-control"  placeholder="Search for a brand or item" >
-								<a class="search-btn"><img src="assets/img/icon-search@2x.png"></a>
+								<input ng-model="search" type="text" class="form-control"  placeholder="Search for a brand or item" >
+								<a class="search-btn" ng-click="item in ctrl.products | orderBy:'name' | filter:search">
+                                <img src="assets/img/icon-search@2x.png"></a>
 							</div>
 						</form>
 					</div>
