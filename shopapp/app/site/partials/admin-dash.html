@@ -10,15 +10,19 @@
 	<table class="products-list table">
 		<tr>
 			<th>ID</th>
+			<th>Image</th>
 			<th>Name</th>
 			<th>Price</th>
-			<th>Quantity</th>
-			<th>&nbsp;</th>
+			<th>Stock</th>
+			<th><em>View</em></th>
+			<th><em>Edit</em></th>
+			<th><em>Delete</em></th>
 		</tr>
 		<tr ng-repeat="product in ctrl.products track by $index">
 			<td>{{product.id}}</td>
+			<td><img class="dashboard_list_img" ng-src="{{product.image}}"/></td>
 			<td>{{product.name}}</td>
-			<td>{{product.price}}</td>
+			<td>{{product.price | currency : "CAD$ " : 2}}</td>
 			<td>{{product.quantity}}</td>
 			<td><a ng-click="ctrl.viewProduct(product)">View</a></td>
 			<td><a ng-click="ctrl.editProduct(product)">Edit</a></td>
