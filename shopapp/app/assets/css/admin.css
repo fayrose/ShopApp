@@ -130,6 +130,10 @@ tr:nth-child(even) {
 	text-decoration: underline;
 	color: #fff;
 }
+.admin-dash-no-products a:hover {
+	text-decoration: none;
+	color: #000;
+}
 
 /* IMPROVEMENTS - categories.html */
 
