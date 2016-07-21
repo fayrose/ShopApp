@@ -241,12 +241,20 @@ Product view
 img.img-responsive.category{
 	width: 250px;
 	height: 250px;
-	margin-top: 50px;
 	text-align: center;
 }
 
 .description{
 	text-align: center;
+}
+
+div.thumbnail{
+	margin-top: 30px;
+	width: 70%;
+}
+
+.pointer{
+	cursor: pointer;
 }
 
 
