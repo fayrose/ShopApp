@@ -116,7 +116,7 @@ tr:nth-child(even) {
 
 .admin-dash-no-products {
 	color: white;
-	width: 200px;
+	width: 250px;
 	padding: 5px;
 	background-color: red;
 	-moz-box-shadow: 0 0 25px rgba(0,0,0,0.5);
