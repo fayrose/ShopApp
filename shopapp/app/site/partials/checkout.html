@@ -17,9 +17,9 @@
   </tr>
 </table>
 <hr>
-<h5>Subtotal:</h5>
-<h5>Tax:</h5>
-<h5>Total:</h5>
+<h5>Subtotal: {{ctrl.subtotal | currency : "CAD$ " : 2}}</h5>
+<h5>Tax: {{ctrl.total - ctrl.subtotal | currency : "CAD$ " : 2}}</h5>
+<h5>Total: {{ctrl.total | currency : "CAD$ " : 2}}</h5>
 <form action=" " method=" ">
 
   <div class="form-group">

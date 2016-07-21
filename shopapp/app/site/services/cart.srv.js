@@ -24,6 +24,8 @@
 		self.removefromCart = removefromCart;
 		self.changeQuantity = changeQuantity;
     self.setisCart = setisCart;
+		self.calcSubtotal = calcSubtotal;
+		self.calcTotal = calcTotal;
 
 		function getCart(){
 			return self.cart;
@@ -59,6 +61,18 @@
         self.is_cart = false;
       }
     }
+
+		function calcSubtotal() {
+			subtotal = 0;
+			for(var i=0;i < self.cart.length;i++){
+				subtotal += self.cart[i].product.price * self.cart[i].quantity;
+			}
+			return subtotal;
+		}
+
+		function calcTotal() {
+			return calcSubtotal() * 1.13;
+		}
   }
 }
 })();
