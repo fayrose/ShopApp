@@ -125,6 +125,10 @@ tr:nth-child(even) {
 	border: 1px solid red;
 }
 
+.admin-dash-no-products a {
+	text-decoration: none;
+}
+
 /* IMPROVEMENTS - admin-view.html */
 
 .admin-view {
