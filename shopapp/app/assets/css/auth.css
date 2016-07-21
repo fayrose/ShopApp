@@ -50,8 +50,8 @@
 }
 
 .login-page .btn-primary:hover {
-  background-color: #39353c;
-  border-color: #39353c;
+  background-color: #666;
+  border-color: #666;
 }
 
 .login-page .help-links p {
