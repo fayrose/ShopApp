@@ -30,17 +30,8 @@
 	font-size:2rem;
 	font-weight:200;
 }
-#admin .nav-panel ul li > a{
+#admin .nav-panel ul li > a {
 	color:white;
-}
-
-#admin .nav-panel a:active {
-	background-color: #fff;
-	padding: 5px;
-}
-
-#admin .nav-panel ul li > a:hover {
-	color: #ccc;
 }
 
 #admin .nav-panel ul li:hover{
