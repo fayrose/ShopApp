@@ -11,6 +11,7 @@
 		checkoutVm.total = cartSrv.calcTotal();
 		checkoutVm.cart = getCart();
 		checkoutVm.products = productSrv.getProducts();
+		checkoutVm.deletefromCart = deletefromCart;
 
 		function submitForm() {
 			$state.go('orderconfirmation');
@@ -18,6 +19,11 @@
 		function getCart() {
 			return cartSrv.getCart();
 		}
+
+		function deletefromCart(productId) {
+			cartSrv.removefromCart(productId);
+		}
+
 		function changeQuantity() {
 			var product;
 			for(var i = 0; i < checkoutVm.cart.length; i++) {
