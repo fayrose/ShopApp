@@ -26,9 +26,9 @@
 			<td>{{product.category}}</td>
 			<td>{{product.price | currency : "CAD$ " : 2}}</td>
 			<td>{{product.quantity}}</td>
-			<td><a ng-click="ctrl.viewProduct(product)">View</a></td>
-			<td><a ng-click="ctrl.editProduct(product)">Edit</a></td>
-			<td><a ng-click="ctrl.deleteProduct(product.id)">Delete</a></td>
+			<td><a ng-click="ctrl.viewProduct(product)" class="pointer">View</a></td>
+			<td><a ng-click="ctrl.editProduct(product)" class="pointer">Edit</a></td>
+			<td><a ng-click="ctrl.deleteProduct(product.id)" class="pointer">Delete</a></td>
 		</tr>
 	</table>
 </div>
