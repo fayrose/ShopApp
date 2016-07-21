@@ -127,6 +127,7 @@ tr:nth-child(even) {
 
 .admin-dash-no-products a {
 	text-decoration: none;
+	color: #fff;
 }
 
 /* IMPROVEMENTS - admin-view.html */
