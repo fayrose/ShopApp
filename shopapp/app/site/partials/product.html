@@ -30,7 +30,7 @@
              <h3>{{ctrl.product.description}}</h3>
                     <h3>{{ctrl.product.price | currency}}</h3>
                 <p class="body-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                <input type="number" ng-model="ctrl.quantity">
+                <input type="number" ng-model="ctrl.quantity" min="1" max="ctrl.product.quantity">
                 <button type="button" class="btn btn-primary " ng-click="ctrl.addtoCart(ctrl.product, ctrl.quantity)">Add to Cart</button>
             </div>
         </div>
