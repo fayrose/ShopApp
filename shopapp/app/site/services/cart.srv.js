@@ -38,7 +38,16 @@
 
 		function addtoCart(product, quantity){
 			productSrv.updateProduct(product, product.id);
-      self.cart.push({product: product, quantity: quantity});
+			var in_cart = false;
+			for (var i=0; i < self.cart.length; i++) {
+				if (product.id === self.cart[i].product.id) {
+					in_cart = true;
+					self.cart[i].quantity += quantity;
+				}
+			}
+			if (in_cart == false) {
+      	self.cart.push({product: product, quantity: quantity});
+			}
 
 			localStorage.setItem("cart", JSON.stringify(self.cart));
       self.setisCart();
