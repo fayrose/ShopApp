@@ -10,6 +10,18 @@
 		cartVm.is_cart = cartSrv.is_cart;
 		cartVm.cart = cartSrv.getCart();
 
+		$scope.$watch(function(){
+	    	return cartSrv.cart;
+		}, function (newValue) {
+			console.log(cartSrv.cart.length)
+			if(cartSrv.cart.length > 0){
+					cartVm.cart = cartSrv.getCart();
+			    cartVm.is_products = true;
+			}
+		});
+
+
+
 		function checkout() {
 			$state.go("checkout");
 		}

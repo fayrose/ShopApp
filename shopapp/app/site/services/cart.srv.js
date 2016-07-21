@@ -16,13 +16,14 @@
     }
     else {
       self.is_cart = false;
-    }
+
 
 		//public functions
 		self.getCart = getCart;
 		self.addtoCart = addtoCart;
 		self.removefromCart = removefromCart;
 		self.changeQuantity = changeQuantity;
+    self.setisCart = setisCart;
 
 		function getCart(){
 			return self.cart;
@@ -30,6 +31,7 @@
 
 		function addtoCart(product, quantity){
       self.cart.push({product: product, quantity: quantity});
+      self.setisCart();
 		}
 
 		function changeQuantity(productId, quantity){
@@ -46,6 +48,17 @@
 					self.cart.splice(i, 1);
 				}
 			}
+      self.setisCart();
 		}
+
+    function setisCart() {
+      if (self.cart.length > 0) {
+        self.is_cart = true;
+      }
+      else {
+        self.is_cart = false;
+      }
+    }
   }
+}
 })();
