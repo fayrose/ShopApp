@@ -115,7 +115,7 @@ tr:nth-child(even) {
 
 /* IMPROVEMENTS - admin-view.html */
 
-.admin-view-image {
+.admin-view-image img {
 	width: 200px;
 }
 
