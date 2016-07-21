@@ -3,12 +3,18 @@
 		.module('shopApp')
 		.controller('categoryCtrl',categoryCtrl)
 
-	function categoryCtrl($stateParams,productSrv, products){
+	function categoryCtrl($stateParams,productSrv,$state,products){
 		var categoryVm = this;
+
 		categoryVm.products = products;
-		console.log(categoryVm.products);
 		categoryVm.category = $stateParams.category;
-		console.log("cat: " + categoryVm.category);
+
+		//function bindings
+		categoryVm.goProduct = goProduct;
+
+		function goProduct(id) {
+			$state.go('product',{productId:id});
+		}
 	}
 
 })();
