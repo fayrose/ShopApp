@@ -108,7 +108,12 @@
 		}
 
 		function addtoCart(product, quantity) {
+			if quantity > product.quantity {
+				$('#error_message').show();
+			}
+			else {
 			cartSrv.addtoCart(product, quantity);
+		}
 			$state.go("cart");
 		}
 	}

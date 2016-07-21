@@ -37,7 +37,9 @@
 		}
 
 		function addtoCart(product, quantity){
+			product.quantity -= quantity;
       self.cart.push({product: product, quantity: quantity});
+
 			localStorage.setItem("cart", JSON.stringify(self.cart));
       self.setisCart();
 		}
