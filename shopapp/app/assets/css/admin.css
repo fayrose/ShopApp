@@ -34,7 +34,7 @@
 	color:white;
 }
 
-#admin .nav-panel ul li > a:active {
+#admin .nav-panel a:active {
 	background-color: #fff;
 	padding: 5px;
 }
