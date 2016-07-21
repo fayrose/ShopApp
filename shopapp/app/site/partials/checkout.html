@@ -1,3 +1,25 @@
+<div class="">
+  <h1>Your Cart:</h1>
+</div>
+<table class="products-list table">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Quantity</th>
+    <th>&nbsp;</th>
+  </tr>
+  <tr ng-repeat="item in ctrl.cart track by $index">
+    <td>{{item.product.id}}</td>
+    <td>{{item.product.name}}</td>
+    <td>{{item.product.price}}</td>
+    <td>{{item.quantity}}</td>
+  </tr>
+</table>
+<hr>
+<h5>Subtotal:</h5>
+<h5>Tax:</h5>
+<h5>Total:</h5>
 <form action=" " method=" ">
 
   <div class="form-group">
