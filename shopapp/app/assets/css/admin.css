@@ -118,7 +118,7 @@ tr:nth-child(even) {
 .admin-view {
 	width: 600px;
 }
-.admin-view-header {
+.admin-view-header img {
 	/*width: 600px;*/
 	border-bottom: 1px solid #ccc;
 	color: #ccc;
