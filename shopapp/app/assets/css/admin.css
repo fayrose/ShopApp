@@ -91,8 +91,13 @@
 td {
 	height: 50px;
 }
+
 td:first-child + td {
 	width: 100px;
+}
+
+td:first-child + td + td {
+	width: 300px;
 }
 
 tr:first-child {
