@@ -91,7 +91,7 @@
 td {
 	height: 50px;
 }
-td:second-child {
+td:first-child + td {
 	width: 100px;
 }
 
