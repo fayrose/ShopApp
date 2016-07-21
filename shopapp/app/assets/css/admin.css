@@ -118,7 +118,6 @@ tr:nth-child(even) {
 	color: white;
 	width: 400px;
 	padding: 5px;
-	font-size: 1.2em;
 	background-color: red;
 	-moz-box-shadow: 0 0 25px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 0 0 25px rgba(0,0,0,0.5);
@@ -129,6 +128,12 @@ tr:nth-child(even) {
 .admin-dash-no-products a {
 	text-decoration: none;
 	color: #666;
+}
+
+/* IMPROVEMENTS - categories.html */
+
+.categories-warning {
+	font-size: 1.5em;
 }
 
 /* IMPROVEMENTS - admin-view.html */
