@@ -21,16 +21,21 @@
 
         <!-- Product List -->
         <div class="row">
-            <div class="col-md-7">    
+            <div class="col-md-7">
                     <img class="img-responsive" src="{{ctrl.product.image}}">
-                      
+
             </div>
             <div class="col-md-5">
             <a href="#"><button type="button" class="btn btn-success">Back</button> </a>
              <h3>{{ctrl.product.description}}</h3>
-                    <h3>{{ctrl.product.price | currency}}</h3>       
+                    <h3>{{ctrl.product.price | currency}}</h3>
                 <p class="body-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+<<<<<<< HEAD
                 <button type="button" class="btn btn-primary cart">Add to Cart</button> 
+=======
+                <input type="number" ng-model="ctrl.quantity">
+                <button type="button" class="btn btn-primary " ng-click="ctrl.addtoCart(ctrl.product, ctrl.quantity)">Add to Cart</button>
+>>>>>>> origin/master
             </div>
         </div>
         <!-- /.row -->
