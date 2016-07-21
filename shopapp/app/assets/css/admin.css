@@ -69,7 +69,7 @@
 }
 
 
-/* IMPROVEMENTS */
+/* IMPROVEMENTS - admin-dash.html */
 
 .dashboard_list_img {
 	height: 30px;
@@ -111,6 +111,12 @@ tr:nth-child(even) {
 
 .pointer {
     cursor: pointer;
+}
+
+/* IMPROVEMENTS - admin-view.html */
+
+.admin-view-image {
+	width: 700px;
 }
 
 
