@@ -29,7 +29,6 @@
 	font-size:2rem;
 	font-weight:200;
 }
-
 #admin .nav-panel ul li > a{
 	color:white;
 }
@@ -44,6 +43,7 @@
 	width:75%;
 	font-size:1rem;
 	color:#555;
+
 }
 
 #admin .products-list a{
@@ -67,6 +67,9 @@
 #admin .product-frm select{
 	font-size:1rem;
 }
+
+
+/* IMPROVEMENTS */
 
 .dashboard_list_img {
 	height: 30px;
@@ -101,6 +104,5 @@ tr:nth-child(even) {
 .pointer {
     cursor: pointer;
 }
-
 
 
