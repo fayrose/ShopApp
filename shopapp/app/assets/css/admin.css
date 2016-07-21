@@ -127,4 +127,7 @@ tr:nth-child(even) {
 	font-size: 1.5em;
 }
 
+.admin-view-description {
+	width: 600px;
+}
 
