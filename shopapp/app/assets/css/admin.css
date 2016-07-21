@@ -36,6 +36,7 @@
 
 #admin .nav-panel ul li > a:active {
 	background-color: #fff;
+	padding: 5px;
 }
 
 #admin .nav-panel ul li > a:hover {
