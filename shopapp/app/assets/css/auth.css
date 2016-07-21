@@ -62,11 +62,6 @@
   cursor: pointer;
 }
 
-.login-page .help-links a:hover {
-  color: red;
-}
-
-
 
 @media only screen and (min-width:  768px ) {
   .banner-wrapper.registration-header {
