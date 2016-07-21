@@ -57,7 +57,7 @@
       <td>{{item.product.id}}</td>
       <td><img class="dashboard_list_img" ng-src="{{item.product.image}}"/></td>
       <td>{{item.product.name}}</td>
-      <td>{{item.product.price}}</td>
+      <td>{{item.product.price * item.quantity | currency: 'CAD $' : 2}}</td>
       <td>{{item.quantity}}</td>
       <td><button type="delete" class="btn btn-danger" ng-click="ctrl.deletefromCart(item.product.id)">Delete</button></td>
     </tr>
