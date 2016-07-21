@@ -10,6 +10,32 @@ body{
 	font-size:100%;
 }
 
+table.products-list {
+	font-size: 1.5em;
+}
+
+td.det-cart{
+	width: 300px;
+	padding-right: 10px;
+	background-color: #fff;
+}
+
+.cart-total{
+	background-color: #fdffda;
+	padding: 20px;
+	width: 400px;
+}
+
+.text{
+	color: #000;
+	padding-left: 20px;
+
+}
+
+.checkout{
+	font-size: 1.5em;
+}
+
 /*
 Globals
 */
