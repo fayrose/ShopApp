@@ -54,8 +54,9 @@
 						<form>
 							<!-- TO DO #3: ENABLE PRODUCT SEARCH -->
 							<div class="form-container">
-								<input type="text" class="form-control"  placeholder="Search for a brand or item" >
-								<a class="search-btn"><img src="assets/img/icon-search@2x.png"></a>
+								<input ng-model="search" type="text" class="form-control"  placeholder="Search for a brand or item" >
+								<a class="search-btn" ng-click="item in ctrl.products | orderBy:'name' | filter:search">
+                                <img src="assets/img/icon-search@2x.png"></a>
 							</div>
 						</form>
 					</div>
@@ -75,14 +76,14 @@
 						<div class="table-view">
 							<div class="table-cell">
 								<div class="page-scroll">
-									<i class="fa fa-cutlery"></i>
+									<!-- <i class="fa fa-cutlery fa-5x"></i> -->
 								</div><!-- /page-scroll -->
 							</div>
 						</div>
 					</div>
 					<!-- SET PRODUCT IMAGE -->
 					<div ng-click="ctrl.toCategory('Food')" id="iconBox">
-					<p>FOOD</p>
+					<p><i class="fa fa-cutlery fa-5x"></i></p>
 					</div>
 				</div>
 			</div>
@@ -92,14 +93,13 @@
 						<div class="table-view">
 							<div class="table-cell">
 								<div class="page-scroll">
-									<i class="fa fa-home"></i>
 								</div><!-- /page-scroll -->
 							</div>
 						</div>
 					</div>
 					<!-- SET PRODUCT IMAGE -->
 					<div ng-click="ctrl.toCategory('Shelter')" id="iconBox">
-					<p>SHELTER</p>
+					<p><i class="fa fa-home fa-5x"></i></p>
 					</div>
 				</div>
 			</div>
@@ -109,14 +109,14 @@
 						<div class="table-view">
 							<div class="table-cell">
 								<div class="page-scroll">
-									<i class="fa fa-life-ring"></i>
+									
 								</div><!-- /page-scroll -->
 							</div>
 						</div>
 					</div>
 					<!-- SET PRODUCT IMAGE -->
 					<div ng-click="ctrl.toCategory('Safety')" id="iconBox">
-					<p>SAFETY</p>
+					<p><i class="fa fa-life-ring fa-5x "></i></p>
 					</div>
 				</div>
 			</div>
@@ -127,14 +127,15 @@
 						<div class="table-view">
 							<div class="table-cell">
 								<div class="page-scroll">
-									<i class="fa fa-leaf"></i>
+									
 								</div><!-- /page-scroll -->
 							</div>
 						</div>
 					</div>
 					<!-- SET PRODUCT IMAGE -->
-					<div ng-click="ctrl.toCategory('Clothing')" id="iconBox">
-					<p>CLOTHING</p>
+					<div ng-click="ctrl.toCategory('Safety')" id="iconBox">
+					<p><i class="fa fa-leaf fa-5x "></i></p>
+					<p>housing</p>
 					</div>
 				</div>
 			</div>

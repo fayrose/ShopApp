@@ -18,11 +18,16 @@
 			if(cartSrv.cart.length > 0){
 					cartVm.cart = cartSrv.getCart();
 			    cartVm.is_products = true;
+			} else {
+				cartVm.is_products = false;
 			}
 		});
 
 		function deletefromCart(productId) {
-			cartSrv.deletefromCart(productId);
+			cartSrv.removefromCart(productId);
+			if(cartSrv.cart.length === 0){
+					cartVm.is_products = false;
+			}
 		}
 
 		function checkout() {

@@ -7,6 +7,8 @@
 		var checkoutVm = this;
 
 		checkoutVm.submitForm = submitForm;
+		checkoutVm.subtotal = cartSrv.calcSubtotal();
+		checkoutVm.total = cartSrv.calcTotal();
 		checkoutVm.cart = getCart();
 
 		function submitForm() {

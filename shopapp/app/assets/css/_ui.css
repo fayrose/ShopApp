@@ -189,7 +189,7 @@ Product view
 
 #product-card .product-buy{
 	position: absolute;
-	background: #ff6d37;
+	background: #39353C;
 	border-radius:100%;
 	color:white;
 	height:30px;
@@ -321,6 +321,10 @@ filter:alpha(opacity=100);
 	background-color: #39353C;
 }
 
+.fa {
+	background-color: #39353C;
+	color: #E3E0EA;
+}
 
 
 
