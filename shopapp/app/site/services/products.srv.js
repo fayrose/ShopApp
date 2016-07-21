@@ -45,7 +45,7 @@
 		}
 
 		function updateProduct(product,productId){
-			api.request('/products/'+productId,product,'PUT')
+			api.request('/products/'+ productId,product,'PUT')
 			.then(function(res){
 				console.log(res);
 				if(res.status === 200){
@@ -53,6 +53,9 @@
 					self.updateProductList(product,productId);
 
 				}
+			})
+			.catch(function(err) {
+				console.log(err);
 			})
 		}
 

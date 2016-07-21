@@ -37,7 +37,6 @@
 		}
 
 		function addtoCart(product, quantity){
-			product.quantity -= quantity;
 			productSrv.updateProduct(product, product.id);
       self.cart.push({product: product, quantity: quantity});
 
@@ -45,23 +44,24 @@
       self.setisCart();
 		}
 
-		function changeQuantity(productId, quantity){
+		function changeQuantity(productId, new_quantity){
+			product = productSrv.getProduct(productId);
 			for (var i = 0; i < self.cart.length; i++) {
         if (self.cart[i].product.id === productId) {
-          self.cart[i].quantity = quantity;
+					self.cart[i].quantity = new_quantity;
         }
       }
 			localStorage.setItem("cart", JSON.stringify(self.cart))
 		}
 
 		function removefromCart(productId){
-      for(var i=0;i < self.cart.length;i++){
+	    for(var i=0;i < self.cart.length;i++){
 				if(self.cart[i].product.id === productId){
 					self.cart.splice(i, 1);
 				}
 			}
-      self.setisCart();
-			localStorage.setItem("cart", JSON.stringify(self.cart))
+			localStorage.setItem("cart", JSON.stringify(self.cart));
+			self.setisCart();
 		}
 
     function setisCart() {
