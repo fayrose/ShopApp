@@ -118,6 +118,7 @@ tr:nth-child(even) {
 .admin-view-header {
 	width: 600px;
 	border-bottom: 1px solid #ccc;
+	color: #666;
 }
 
 .admin-view-image img {
@@ -129,7 +130,7 @@ tr:nth-child(even) {
 }
 
 .admin-view-title {
-	font-size: 2em;
+	font-size: 1.8em;
 }
 
 .admin-view-description {
