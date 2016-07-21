@@ -71,7 +71,7 @@
 
 /* IMPROVEMENTS */
 
-.dashboard_list_img img {
+.dashboard_list_img {
 	height: 30px;
 	width: 50px;
 	border: 1px solid #ccc;
@@ -90,6 +90,9 @@
 
 td {
 	height: 50px;
+}
+td:second-child {
+	width: 100px;
 }
 
 tr:first-child {
