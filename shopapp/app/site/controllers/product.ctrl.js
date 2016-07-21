@@ -113,8 +113,9 @@
 			}
 			else {
 				cartSrv.addtoCart(product, quantity);
+				$state.go("cart");
 		}
-			$state.go("cart");
+
 		}
 	}
 })();

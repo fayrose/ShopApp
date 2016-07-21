@@ -4,7 +4,7 @@
 		.module('shopApp')
 		.service('cartSrv',cartService);
 
-	function cartService(){
+	function cartService(productSrv){
 		var self = this;
 
 		//public variables
@@ -38,6 +38,7 @@
 
 		function addtoCart(product, quantity){
 			product.quantity -= quantity;
+			productSrv.updateProduct(product, product.id);
       self.cart.push({product: product, quantity: quantity});
 
 			localStorage.setItem("cart", JSON.stringify(self.cart));
