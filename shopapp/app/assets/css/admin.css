@@ -31,7 +31,7 @@
 	font-weight:200;
 }
 #admin .nav-panel ul li > a{
-	color:white;
+	color:red;
 }
 #admin .nav-panel ul li:hover{
 	color:#2b96ff;
