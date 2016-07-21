@@ -22,6 +22,8 @@
 
 		function deletefromCart(productId) {
 			cartSrv.removefromCart(productId);
+			checkoutVm.subtotal = cartSrv.calcSubtotal();
+			checkoutVm.total = cartSrv.calcTotal();
 		}
 
 		function changeQuantity() {
