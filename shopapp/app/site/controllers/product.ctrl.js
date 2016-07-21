@@ -4,7 +4,7 @@
 	.module('shopApp')
 	.controller('ProductCtrl',ProductCtrl);
 
-	function ProductCtrl($stateParams,api,productSrv,$state) {
+	function ProductCtrl($stateParams,api,productSrv,$state, cartSrv) {
 		var productVm = this;
 
 		productVm.categories = [
@@ -41,6 +41,7 @@
 		productVm.is_products = is_products;
 		productVm.goUpdate = goUpdate;
 		productVm.goBack = goBack;
+		productVm.addtoCart = addtoCart;
 
 		function goBack(){
 			$state.go("admin.dash");
@@ -106,5 +107,9 @@
 			 productSrv.deleteProduct(productVm.product.id);
 		}
 
+		function addtoCart(product, quantity) {
+			cartSrv.addtoCart(product, quantity);
+			$state.go("cart");
+		}
 	}
 })();

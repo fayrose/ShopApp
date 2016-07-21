@@ -1,1 +1,20 @@
-<button class="btn btn-primary" ng-click="ctrl.checkout()">Check out</button>
+<div ng-hide="ctrl.is_products">
+  <h4>There are no items in your cart.</h4>
+</div>
+<div ng-show="ctrl.is_products">
+  <table class="products-list table">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>&nbsp;</th>
+    </tr>
+    <tr ng-repeat="item in ctrl.cart track by $index">
+      <td>{{item.product.id}}</td>
+      <td>{{item.product.name}}</td>
+      <td>{{item.product.price}}</td>
+      <td>{{item.quantity}}</td>
+    </tr>
+  </table>
+  <button class="btn btn-primary" ng-click="ctrl.checkout()">Check out</button>

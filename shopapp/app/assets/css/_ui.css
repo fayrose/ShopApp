@@ -223,3 +223,90 @@ Product view
 	font-weight:500;
 	margin:10px 0px;
 }
+
+.body-text{
+	font-family: 'Roboto', sans-serif;
+	 font-weight: 200;
+	 margin: 0 auto;
+	 font-size: 1.2vw;
+	 line-height: 2vw;
+	 padding: 25px 0;
+	 color: #7F7786;
+}
+
+.cart{
+	float: right;
+}
+
+img.img-responsive.category{
+	width: 250px;
+	height: 250px;
+	text-align: center;
+}
+
+.description{
+	text-align: center;
+}
+
+div.thumbnail{
+	margin-top: 30px;
+	width: 70%;
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+
+/* hover image effect */
+
+.hovereffect {
+width:100%;
+height:100%;
+float:left;
+overflow:hidden;
+position:relative;
+text-align:center;
+cursor:default;
+}
+
+.hovereffect .overlay {
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+top:-10;
+left:0;
+opacity:0;
+background-color:rgba(0,0,0,0.5);
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out
+}
+
+.hovereffect img {
+display:block;
+position:relative;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+}
+
+
+.hovereffect:hover img {
+-ms-transform:scale(1.2);
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+
+
+
+
+
+
+
+

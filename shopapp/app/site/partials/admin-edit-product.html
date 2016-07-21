@@ -18,7 +18,7 @@
 		<div>
 			<label>Category</label>
 			<!-- TODO #2: Set Options -->
-			<select name="category">
+			<select name="category" ng-model="ctrl.product.category">
 				<option ng-repeat="category in ctrl.categories" value="{{category.value}}">{{category.label}}</option>
 			</select>
 		</div>
