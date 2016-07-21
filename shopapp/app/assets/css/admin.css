@@ -35,7 +35,7 @@
 }
 
 #admin .nav-panel ul li > a:hover {
-	color: red;
+	color: #ccc;
 }
 
 #admin .nav-panel ul li:hover{
