@@ -6,6 +6,9 @@
 		.controller('AdminCtrl',AdminCtrl);
 
 	function AdminCtrl($scope,$state,productSrv){
+		/*
+		Controller for the admin.html, admin-dash.html partials.
+		*/
 		var adminVm = this;
 		adminVm.productSrv = productSrv;
 
@@ -37,14 +40,17 @@
 		adminVm.deleteProduct = deleteProduct;
 
 		function editProduct(product){
+			//Redirects to the edit-product page
 			$state.go('admin.editproduct',{productId:product.id});
 		}
 
 		function viewProduct(product) {
+			//Redirects to the administrator view page
 			$state.go('admin.view', {productId:product.id});
 		}
 
 		function deleteProduct(productid) {
+			//Deletes a product
 			productSrv.deleteProduct(productid);
 			if (productSrv.products.length == 0) {
 				adminVm.products = productSrv.products;
@@ -53,6 +59,7 @@
 		}
 
 		function logout(){
+			//Logs out of the administrator account
 			localStorage.removeItem('authToken');
 			$state.go('login');
 		}
