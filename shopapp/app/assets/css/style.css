@@ -14,3 +14,13 @@ body {
     width: 200px;
     height: 150px;
 }
+
+.thumbnail {
+	border-radius: 10px;
+	width: 300px !important;
+}
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+}

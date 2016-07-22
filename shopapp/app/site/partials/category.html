@@ -25,13 +25,13 @@
     <div class="col-xs-4"  ng-repeat="product in ctrl.products | filter: {category: ctrl.category} | min" ng-click="ctrl.goProduct(product.id)">
         <div class="thumbnail">
           <div class="hovereffect">
-          <img class="img-responsive category pointer" src="{{product.image}}" /><br>
+          <img class=" center img-responsive category pointer" src="{{product.image}}" /><br>
               <!-- Page Heading -->
              <div class="overlay">
              </div>
           </div>
        <div class="caption">
-         <a class="pointer"><h4>{{product.name}}  | {{product.category}}</h4></a>
+         <a class="pointer"><h4 class="center">{{product.name}}  | {{product.category}}</h4></a>
         </div>
       </div>
     </div>
