@@ -36,3 +36,9 @@ body {
 .glyphicon {
 	pointer-events: all;
 }
+
+.glyphicon-shopping-cart, .cat-icon {
+	padding-top: 15px;
+	font-size: 3em !important;
+	color: white;
+}
