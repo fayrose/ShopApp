@@ -10,7 +10,7 @@
 }
 
 #admin .nav-panel{
-	background:#39353c;
+	background-color :#39353c;
 	padding:40px;
 	width:25%;
 	height:100%;
@@ -169,4 +169,3 @@ tr:nth-child(even) {
 	/*width: 600px;*/
 	text-align: justify;
 }
-

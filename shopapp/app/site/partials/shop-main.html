@@ -21,9 +21,10 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-      	<li><a href="http://localhost:8080/api/init" ng-click=""><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#" ng-click="ctrl.toLogin()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      	<li><a href="#"><span ng-click="ctrl.toCart()" class="fa fa-shopping-cart fa-2x"></span></a></li>
+      	<li ng-if="!ctrl.logged_in"><a href="http://localhost:8080/api/init" ng-click=""><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li ng-if="!ctrl.logged_in"><a ui-sref="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li ng-if="ctrl.logged_in"><a ui-sref="admin.dash"><span class="glyphicon glyphicon-log-in"></span> Admin Dashboard</a></li>
+      	<li><a ui-sref="cart"><span class="fa fa-shopping-cart fa-2x"></span></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

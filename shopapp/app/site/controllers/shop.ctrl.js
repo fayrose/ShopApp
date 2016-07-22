@@ -12,6 +12,19 @@
 		shopVm.images = ["assets/img/img-hero-1.jpg", 'http://oddculture.com/wp-content/uploads/2015/12/Camping-Near-The-Lake-Background-Wallpaper.jpg', 'http://auroravillage.com/media/uploads/slideshows/home-slider-1.jpg' ];
 		shopVm.background_image = choose_background(shopVm.images);
 		shopVm.search;
+		shopVm.logged_in;
+
+		//Watches to see if the user is logged in
+		$scope.$watch(function(){
+	    	return localStorage.authToken;
+		}, function (newValue) {
+			if (localStorage.authToken != null) {
+				shopVm.logged_in = true;
+			}
+			else {
+				shopVm.logged_in = false;
+			}
+		});
 
 		//function bindings
 		shopVm.toCategory = toCategory;
