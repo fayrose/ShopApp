@@ -9,7 +9,7 @@
 
 		//Initializes variables and sets background image
 		shopVm.products;
-		shopVm.images = ["assets/img/img-hero-1.jpg" ];
+		shopVm.images = ["assets/img/img-hero-1.jpg", 'http://oddculture.com/wp-content/uploads/2015/12/Camping-Near-The-Lake-Background-Wallpaper.jpg', 'http://auroravillage.com/media/uploads/slideshows/home-slider-1.jpg' ];
 		shopVm.background_image = choose_background(shopVm.images);
 
 		//function bindings
