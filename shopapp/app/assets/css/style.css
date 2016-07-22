@@ -24,3 +24,11 @@ body {
 	margin: 0 auto;
 	text-align: center;
 }
+
+.main-nav {
+	margin-bottom: 0;
+}
+
+.navbar-nav {
+	padding-top: 4px;
+}
