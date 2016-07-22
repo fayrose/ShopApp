@@ -49,7 +49,6 @@
       <td>{{item.product.price}}</td>
       <td>
         <p>Your current quantity is {{item.quantity}}</p>
-        <p>Your new quantity is {{ctrl.quantity}}</p>
         <input type="number" placeholder='Enter a new quantity' ng-model='ctrl.quantity'>
         <button ng-click='ctrl.updateQuantity(item.product.id,ctrl.quantity)'>Update Quantity</button>
       </td>
@@ -57,7 +56,7 @@
 
     </tr>
   </table>
-  <button class="btn btn-primary" ng-click="ctrl.checkout()">Check out</button>
+  <button ng-if="ctrl.is_cart" class="btn btn-primary" ng-click="ctrl.checkout()">Check out</button>
     </div><!-- /.blog-main -->
     </div>
 

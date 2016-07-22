@@ -35,7 +35,7 @@
 			//Removes an item from the cart
 			cartSrv.removefromCart(productId);
 			if(cartSrv.cart.length === 0){
-					cartVm.is_products = false;
+					cartVm.is_cart = false;
 			}
 		}
 
