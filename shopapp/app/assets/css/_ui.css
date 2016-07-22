@@ -77,7 +77,7 @@ Nav
 nav{
 	height:55px;
 	line-height:55px;
-	color:#ff6d37;
+	color:#7F7786;
 	border-bottom:1px solid #d8d8d8;
 	box-shadow: 0 4px 2px -2px #d8d8d8;
 }
@@ -96,7 +96,8 @@ nav .right-nav{
 
 nav .fa-shopping-cart{
 	margin-right:10px;
-	font-size:2rem;
+	font-size:3rem;
+	color: #E3E0EA;
 }
 nav .cart{
 	font-size:1.6rem;
@@ -146,11 +147,11 @@ Top-content
 
 .top-content .search-btn{
 	position: absolute;
-	background:#ff6d37;
+	background:#39353C;
 	height:40px;
 	width:40px;
-	border-top-right-radius:5px;
-	border-bottom-right-radius:5px;
+	border-top-right-radius:25px;
+	border-bottom-right-radius:25px;
 	vertical-align: middle;
 	top:0px;
 	right:0px;
@@ -339,19 +340,25 @@ filter:alpha(opacity=100);
     border-radius: 25px;
     background-color: #39353C;
     padding: 20px;
-    width: 200px;
-    height: 150px;
+    width: 400px;
+    height: 350px;
 }
 
 .navbar {
 	background-color: #39353C;
+	height: 59px;
 }
 
-.fa {
+#icons {
 	background-color: #39353C;
 	color: #E3E0EA;
 }
 
 
+#navIcons {
+	padding: 0 23px;
+}
 
-
+.navbar-nav {
+	font-size: 1.85em;
+}
