@@ -32,3 +32,7 @@ body {
 .navbar-nav {
 	padding-top: 4px;
 }
+
+.glyphicon {
+	pointer-events: all;
+}

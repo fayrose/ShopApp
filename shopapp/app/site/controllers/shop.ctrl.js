@@ -14,7 +14,8 @@
 
 		//function bindings
 		shopVm.toCategory = toCategory;
-		shopVm.toPage = toPage;
+		shopVm.toLogin = toLogin;
+		shopVm.toCart = toCart;
 
 		//watch for any changes to model data
 		$scope.$watch(function(){
@@ -33,9 +34,13 @@
 		$state.go('categories', {category: categoryname});
 	}
 
-	function toPage(pagename) {
+	function toLogin() {
 		//Redirects to a page name passed in as an arg
-		$state.go(pagename);
+		$state.go('login');
+	}
+
+	function toCart() {
+		$state.go('cart');
 	}
 	}
 })();
