@@ -27,6 +27,8 @@ body {
 
 .main-nav {
 	margin-bottom: 0;
+	box-shadow: none;
+	border: none;
 }
 
 .navbar-nav {
@@ -37,8 +39,21 @@ body {
 	pointer-events: all;
 }
 
+.product-view {
+	background-color: #e3e0ea
+}
+
 .glyphicon-shopping-cart, .cat-icon {
 	padding-top: 15px;
 	font-size: 3em !important;
 	color: #e3e0ea;
+}
+
+.search-head {
+	margin-top: 30px;
+	font-weight: 900;
+}
+
+.product-view .product-card {
+	background-color: #e3e0ea;
 }

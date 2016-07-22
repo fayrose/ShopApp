@@ -47,7 +47,7 @@
 						<form>
 							<!-- TO DO #3: ENABLE PRODUCT SEARCH -->
 							<div class="form-container">
-								<input type="text" class="form-control"  placeholder="Search for a brand or item" >
+								<input type="text" class="form-control" ng-model="ctrl.search" id="searchbox" placeholder="Search for a brand or item" >
 								<a class="search-btn"><img src="assets/img/icon-search@2x.png"></a>
 							</div>
 						</form>
@@ -58,10 +58,35 @@
 	</div>
 </section>
 
+<div  ng-if="ctrl.search.length > 0">
+  <div class="container">
+    <h2 class="center search-head">Search Results:</h2>
+    <div class="row">
+
+    </div>
+       <!-- Page Heading -->
+    <div class="row">
+      <div class="col-xs-4"  ng-repeat="product in ctrl.products | filter: {name: ctrl.search} | min" ng-click="ctrl.goProduct(product.id)">
+          <div class="thumbnail">
+            <div class="hovereffect">
+            <img class=" center img-responsive category pointer" src="{{product.image}}" /><br>
+                <!-- Page Heading -->
+               <div class="overlay">
+               </div>
+            </div>
+         <div class="caption">
+           <a class="pointer"><h4 class="center">{{product.name}}  | {{product.category}}</h4></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr style="border: 1px solid #39353C;">
+</div>
+
 <section class="product-view" role="product-view">
 	<div class="content-wrapper">
 		<div class="row">
-			<!-- TODO #3: SHOW PRODUCTS -->
 			<div class="col-xs-12 col-sm-3">
 				<div id="product-card" class="product-card">
 					<div class="product-buy">
@@ -72,7 +97,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- SET PRODUCT IMAGE -->
 					<div ng-click="ctrl.toCategory('Clothing')" id="iconBox">
 					<p><i class="fa fa-leaf fa-5x" id="icons"></i></p>
 					<p>apparel</p>
@@ -89,7 +113,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- SET PRODUCT IMAGE -->
 					<div ng-click="ctrl.toCategory('Food')" id="iconBox">
 					<p><i class="fa fa-cutlery fa-5x" id="icons"></i></p>
 					<p>provisions</p>
@@ -107,7 +130,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- SET PRODUCT IMAGE -->
 					<div ng-click="ctrl.toCategory('Shelter')" id="iconBox">
 					<p><i class="fa fa-home fa-5x" id="icons"></i></p>
 					<p>structures</p>

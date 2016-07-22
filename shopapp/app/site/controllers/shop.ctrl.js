@@ -11,11 +11,13 @@
 		shopVm.products;
 		shopVm.images = ["assets/img/img-hero-1.jpg", 'http://oddculture.com/wp-content/uploads/2015/12/Camping-Near-The-Lake-Background-Wallpaper.jpg', 'http://auroravillage.com/media/uploads/slideshows/home-slider-1.jpg' ];
 		shopVm.background_image = choose_background(shopVm.images);
+		shopVm.search;
 
 		//function bindings
 		shopVm.toCategory = toCategory;
 		shopVm.toLogin = toLogin;
 		shopVm.toCart = toCart;
+		shopVm.showResults = showResults();
 
 		//watch for any changes to model data
 		$scope.$watch(function(){
@@ -27,6 +29,10 @@
 	function choose_background(images) {
 		//Randomly chooses a background from the shopVm.images array
 		return images[Math.floor(Math.random()*images.length)];
+	}
+
+	function showResults() {
+		//displays search results
 	}
 
 	function toCategory(categoryname) {
