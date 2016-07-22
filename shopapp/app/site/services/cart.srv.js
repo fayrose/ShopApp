@@ -9,7 +9,7 @@
 
 		//public variables
 		self.cart = JSON.parse(localStorage.getItem("cart"));
-		
+
 		if (self.cart == null){
 				localStorage.setItem("cart", JSON.stringify([]));
 				self.cart = JSON.parse(localStorage.getItem("cart"));
@@ -58,7 +58,6 @@
 			calcTotal();
 		}
 
-<<<<<<< Updated upstream
 		function changeQuantity(productId, new_quantity){
 			product = productSrv.getProduct(productId);
 			for (var i = 0; i < self.cart.length; i++) {
@@ -66,15 +65,7 @@
 					self.cart[i].quantity = new_quantity;
         }
       }
-=======
-		function changeQuantity(productId, quantity){
-		for (var i = 0; i < self.cart.length; i++) {
-	        if (self.cart[i].product.id === productId) {
-	          self.cart[i].quantity = quantity;
-	      	}
-      	}
-      		// alert("changing cart quantity");
->>>>>>> Stashed changes
+
 			localStorage.setItem("cart", JSON.stringify(self.cart))
 		}
 

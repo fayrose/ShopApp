@@ -10,6 +10,7 @@
 		shopVm.images = ["assets/img/img-hero-1.jpg" ];
 		shopVm.background_image = choose_background(shopVm.images);
 		shopVm.toCategory = toCategory;
+		shopVm.toPage = toPage;
 
 		//watch for any changes to model data
 		$scope.$watch(function(){
@@ -24,6 +25,10 @@
 
 	function toCategory(categoryname) {
 		$state.go('categories', {category: categoryname});
+	}
+
+	function toPage(pagename) {
+		$state.go(pagename);
 	}
 	}
 })();

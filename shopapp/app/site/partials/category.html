@@ -1,10 +1,10 @@
 <nav>
     <div class="content-wrapper">
         <ul class="left-nav">
-            <li><i class="fa fa-first-order fa-4x"></i></li>
+            <li><a href="" ng-click="ctrl.toPage('shop')"><i class="fa fa-first-order fa-4x"></i></a></li>
         </ul>
         <ul class="right-nav">
-            <li><i class="fa fa-shopping-cart"></i><span class="cart">Cart</span></li>
+            <li><a href="" ng-click="ctrl.toPage('cart')"><i class="fa fa-shopping-cart"></i><span class="cart">Cart</span></a></li>
         </ul>
     </div>
 </nav>
@@ -16,33 +16,35 @@
   </p>
 </div> -->
 
-    <div class="container">
+<div class="container">
+
      <!-- Page Heading -->
-<div class="row">
-  <div class="col-sm-6 col-md-4" class="img-responsive"  ng-repeat="product in ctrl.products | filter: {category: ctrl.category}" ng-click="ctrl.goProduct(product.id)">
-    <div class="thumbnail">
-    <div class="hovereffect">
-    <img class="img-responsive category pointer" src="{{product.image}}" /><br>
-        <!-- Page Heading -->
-       <div class="overlay">
-       </div>
-       </div>
-   <div class="caption">
-    <a class="pointer"><h4>{{product.name}}  | {{product.category}}</h4></a>
-</div>
+  <div class="row">
+    <div class="col-xs-4"  ng-repeat="product in ctrl.products | filter: {category: ctrl.category}" ng-click="ctrl.goProduct(product.id)">
+        <div class="thumbnail">
+          <div class="hovereffect">
+          <img class="img-responsive category pointer" src="{{product.image}}" /><br>
+              <!-- Page Heading -->
+             <div class="overlay">
+             </div>
+          </div>
+       <div class="caption">
+         <a class="pointer"><h4>{{product.name}}  | {{product.category}}</h4></a>
+        </div>
       </div>
     </div>
-<!-- /.row -->
-        <hr>
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; EndOfDays 2016</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
+  </div>
+</div>
+  <!-- /.row -->
+          <hr>
+          <!-- Footer -->
+          <footer>
+              <div class="row">
+                  <div class="col-lg-12">
+                      <p>Copyright &copy; EndOfDays 2016</p>
+                  </div>
+              </div>
+              <!-- /.row -->
+          </footer>
 
-    </div>
     <!-- /.container -->
