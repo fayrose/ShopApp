@@ -22,7 +22,7 @@
   </div>
      <!-- Page Heading -->
   <div class="row">
-    <div class="col-xs-4"  ng-repeat="product in ctrl.products | filter: {category: ctrl.category}" ng-click="ctrl.goProduct(product.id)">
+    <div class="col-xs-4"  ng-repeat="product in ctrl.products | filter: {category: ctrl.category} | min" ng-click="ctrl.goProduct(product.id)">
         <div class="thumbnail">
           <div class="hovereffect">
           <img class="img-responsive category pointer" src="{{product.image}}" /><br>
