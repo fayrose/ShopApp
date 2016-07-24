@@ -21,7 +21,6 @@
 		function submitForm() {
 			//Goes to the order confirmation page
 			$state.go('orderconfirmation');
-			cartSrv.cart = [];
 		}
 		function getCart() {
 			//Retrieves the cart from the Cart service

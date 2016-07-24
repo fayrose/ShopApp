@@ -14,10 +14,15 @@
 		confirmVm.subtotal = cartSrv.calcSubtotal();
 		confirmVm.total = cartSrv.calcTotal();
 		confirmVm.cart = getCart();
+		confirmVm.emptyCart = emptyCart;
 
 		function getCart() {
 			//Retrieves the cart from the cart service
 			return cartSrv.getCart();
+		}
+
+		function emptyCart() {
+			cartSrv.cart = [];
 		}
 	}
 
