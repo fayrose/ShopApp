@@ -19,3 +19,6 @@ To start the server from root folder (go back a folder with `cd ..` to eCommerce
 Initialize Admin Account:
 	either click `http://localhost:8080/api/init` or click the Sign-up button on the main page.
 
+
+##Note: 
+This application has been deployed to AWS, which can impact the ability to run this directly from one's computer. If there is trouble initializing or running the app, please post an `issue` and it will be resolved as soon as possible.
